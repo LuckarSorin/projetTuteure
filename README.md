@@ -1,3 +1,3 @@
 # projetTuteure
 projet tuteuré license METWEB
-gestion de prjet sur : https://dgaraude.monday.com/
+Gestion du projet eSGame sur : https://e-sgame.atlassian.net/jira/software/projects/ES/boards/1

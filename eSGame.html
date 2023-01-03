@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Site de tests - Projet Tuteuré</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <map name="house">
+            <area shape="poly" coords="0, 452, 0, 432, 75, 388, 75, 365, 116, 341, 114, 334, 114, 332, 122, 308, 122, 306, 118, 297, 126, 272, 122, 269, 124, 265, 124, 261, 141, 210, 147, 205, 153, 205, 159, 210, 176, 261, 176, 265, 174, 269, 174, 272, 182, 297, 178, 305, 178, 308, 184, 326, 289, 265, 289, 177, 258, 159, 258, 150, 374, 15, 519, 0, 894, 218, 894, 227, 864, 231, 864, 358, 1075, 480, 1075, 501, 576, 787" href="https://developer.mozilla.org/docs/Web/HTML" target="_blank" alt="HTML">
+        </map>
+        <div class="game_container">
+            <div class="game">
+                <img class="main" usemap="#house" src="img/isometric_house.png" alt="eSGame">
+            </div>
+        </div>
+        <script type="text/javascript" src="js/imageMapResizer.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('map').imageMapResize();
+                
+                $(window).on('wheel', function(event) {
+                if(event.originalEvent.deltaY !== 0) {
+                    if(event.originalEvent.deltaY < 0) {
+                        console.log('scrolling up !');
+                        $(".game").css("width", ($(".game").width() + 50) + "px");
+                        $('map').imageMapResize();
+                    }
+                    else {
+                        console.log('scrolling down !');
+                        $(".game").css("width", ($(".game").width() - 50) + "px");
+                        $('map').imageMapResize();
+                    }
+                }
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,109 @@
+/* --- Déclaration des variables de style --- */
+
+:root {
+    --background_color: #000000; /* A modifier par la couleur d'arrière-plan définie dans la charte graphique */
+    --texte_sur_fond_sombre : #FFFFFF; /* Idem */
+}
+
+/* --- Importation des typos --- */
+
+/* --- Déclaration des Media Queries --- */
+
+/* --- Style généraux --- */
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+}
+
+h5 {
+    margin: 0;
+}
+
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div.flex {
+    display: flex;
+}
+
+/* --- Style des pages accueil, connexion et paramètres de l'application --- */
+
+body.fond_sombre {
+    background-color: var(--background_color);
+}
+
+body.fond_sombre h1, body.fond_sombre h2, body.fond_sombre h3, body.fond_sombre h4, body.fond_sombre h5, body.fond_sombre h6, body.fond_sombre p {
+    color: var(--texte_sur_fond_sombre);
+    text-align: center;
+}
+
+div.accueil_centre {
+    height: 100%;
+    width: 33%;
+    margin: auto;
+}
+
+div.flex_colonne {
+    height: calc(100% - 20vh);
+    width: 100%;
+    padding: 10vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+div.bandeau_superieur {
+    align-items: center;
+    justify-content: center;
+}
+
+div.hover_decoration {
+    align-items: center;
+    justify-content: center;
+}
+
+div.hover_decoration hr {
+    width: 30px;
+    display: none;
+}
+
+div.hover_decoration:hover hr {
+    display: block;
+}
+
+div.hover_decoration:hover h2, div.hover_decoration:hover p {
+    margin: 0 10px;
+}

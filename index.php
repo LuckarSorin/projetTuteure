@@ -25,12 +25,22 @@
                     <h3>eHo</h3>
                     <img src="img/placeholder.png" alt="Logo de l'application eHo">
                 </div>
-                <div>
+                <div class="flex hover_decoration">
+                    <hr>
                     <h2><a href="">JOUER</a></h2>
+                    <hr>
                 </div>
                 <div>
-                    <div><p><a href="seconnecter.php">Connexion</a></p></div>
-                    <p><a href="creationcompte.php">Créer un compte</a></p>
+                    <div class="flex hover_decoration">
+                        <hr>
+                        <p><a href="seconnecter.php">Connexion</a></p>
+                        <hr>
+                    </div>
+                    <div class="flex hover_decoration">
+                        <hr>
+                        <p><a href="creationcompte.php">Créer un compte</a></p>
+                        <hr>
+                    </div>
                 </div>
             </div>
         </div>

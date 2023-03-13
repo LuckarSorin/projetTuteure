@@ -11,14 +11,7 @@
         <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>-->
     </head>
     <body class="fond_sombre">
-        <!--<div id="misesajour"></div>
-        <h1>eHo</h1>
-        <button><a>Jouer</a></button>
-        <div>
-            <button><a href="./seconnecter.php">Connexion</a></button>
-            <button><a href="./creationcompte.php">Créer un compte</a></button>
-        </div>
-        <div id="infos"></div>-->
+        <div id="misesajour"></div>
         <div class="accueil_centre">
             <div class="flex_colonne">
                 <div class="flex bandeau_superieur">
@@ -33,16 +26,17 @@
                 <div>
                     <div class="flex hover_decoration">
                         <hr>
-                        <p><a href="seconnecter.php">Connexion</a></p>
+                        <p><a href="./seconnecter.php">Connexion</a></p>
                         <hr>
                     </div>
                     <div class="flex hover_decoration">
                         <hr>
-                        <p><a href="creationcompte.php">Créer un compte</a></p>
+                        <p><a href="./creationcompte.php">Créer un compte</a></p>
                         <hr>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="infos"></div>
     </body>
 </html>

@@ -8,12 +8,28 @@
     <body>
         <h1>eHo</h1>
         <form action="./script/connexion.php" method="POST">
-            <label>Nom de compte</label>
-            <input type="text" name="username" required />
-            <label>Mot de passe</label>
-            <input type="password" name="username" required />
+            <tr>
+                <td>
+                    <label>Nom de compte</label>
+                </td>
+                <td>
+                    <input type="text" name="username" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Mot de passe</label>
+                </td>
+                <td>
+                    <input type="password" name="username" required />
+                </td>
+            </tr>
             
-            <input type="submit" name="enter" value="Se connecter">
+            <tr>
+                <td>
+                    <input type="submit" name="enter" value="Se connecter">
+                </td>
+            </tr>
         </form>
     </body>
 </html>

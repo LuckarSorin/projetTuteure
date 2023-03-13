@@ -9,15 +9,15 @@
         <h1>eHo</h1>
         <form action="./script/inscription.php" method="POST">
             <label>Nom de compte</label>
-            <input />
+            <input type="text" name="username" required/>
             <label>Adresse Mail</label>
-            <input />
+            <input type="email" name="mail" required/>
             <label>Mot de passe</label>
-            <input />
+            <input type="password" name="mot de passe" required/>
             <label>Répéter mot de passe</label>
-            <input />
+            <input type="password" name="mot de passe" required/>
             
-            <button><a>Créer le compte</a></button>
+            <input type="submit" name="enter" value="S'inscrire">
         </form>
     </body>
 </html>

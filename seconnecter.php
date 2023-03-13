@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1>eHo</h1>
-        <form>
+        <form action="./script/connexion.php" method="POST">
             <label>Nom de compte</label>
             <input />
             <label>Mot de passe</label>

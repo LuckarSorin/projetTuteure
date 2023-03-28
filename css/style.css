@@ -1,0 +1,469 @@
+:root {
+    --bleu_profond: #0A545E;
+    --bleu_pastel: #D9F0ED;
+    --orange: #EBB029;
+    --noir: #000000;
+    --blanc: #FFFFFF;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 18px;
+}
+
+body {
+    width: 100%;
+    margin : 0;
+    padding: 0;
+    background-color: var(--bleu_pastel); /* Image fixe lors du scroll à terme */
+    background-image: url(../img/motif.svg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section {
+    width: 100%;
+    display: inline-block;
+}
+
+section.bleu_profond {
+    color: var(--bleu_pastel);
+    background-color: var(--bleu_profond);
+}
+
+section.bleu_pastel {
+    color: var(--bleu_profond);
+    background-color: var(--bleu_pastel);
+}
+
+section.blanc {
+    color: var(--noir);
+    background-color: var(--blanc);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+svg {
+    cursor: help;
+    user-select: none;
+}
+
+/* ----- Importation des polices ----- */
+
+@font-face {
+  font-family: 'Abolition';
+  src: url('https://esteam.mmi-velizy.fr/fonts/Abolition-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('https://esteam.mmi-velizy.fr/fonts/Roboto-RegularItalic.ttf');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('https://esteam.mmi-velizy.fr/fonts/Roboto-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('https://esteam.mmi-velizy.fr/fonts/Roboto-Medium.ttf');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('https://esteam.mmi-velizy.fr/fonts/Roboto-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('https://esteam.mmi-velizy.fr/fonts/Roboto-Black.ttf');
+  font-style: normal;
+  font-weight: 900;
+}
+
+.abolition {
+    font-family: 'Abolition', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2em;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.7em;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5em;
+}
+
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.3em;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+}
+
+span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, p {
+    word-break: break-word;
+}
+
+h1, h2 {
+    margin: 40px 0;
+}
+
+h3, h4, h5, p {
+    margin: 5px 0;
+}
+
+/* ----- Cookies ----- */
+
+aside.cookies_pas_de_consentement {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--noir);
+    background-color: var(--blanc);
+}
+
+aside.cookies {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: var(--noir);
+    background-color: var(--blanc);
+}
+
+/* ----- Header ----- */
+
+header {
+    height: fit-content;
+    width: 100%;
+}
+
+div.navigation {
+    height: 7vh;
+    width: 100%;
+    background-color: var(--bleu_profond);
+}
+
+div.bandeau {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    color: var(--bleu_profond);
+}
+
+div.centre {
+    height: 100%;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+div.logo_centre {
+    height: calc(100% - 60px - 2em - 80px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+div.elements_en_bas {
+    width: 100%;
+}
+
+div.elements_en_bas div {
+    display: flex;
+    justify-content: center;
+}
+
+div.elements_en_bas a {
+    height: 60px;
+    display: block;
+}
+
+/* --- Images --- */
+
+img.width {
+    width: 100%;
+}
+
+img.height {
+    height: 100%
+}
+
+/* ----- Personnalisation du menu de navigation ----- */
+
+nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.picto {
+    height: calc(100% - 20px);
+    width: fit-content;
+    padding: 10px;
+}
+
+div.picto a {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+div.categories {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+div.categories a {
+    height: fit-content;
+    width: fit-content;
+    display: block;
+    margin-right: 40px;
+    color: var(--bleu_pastel);
+}
+
+div.categories a:hover {
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+div.categories p {
+    margin: 0;
+}
+
+div.pictos_categories {
+    height: calc(100% - 20px);
+    width: fit-content;
+    padding: 10px 0;
+    display: none;
+    align-items: center;
+}
+
+div.pictos_categories a {
+    height: 100%;
+    width: fit-content;
+    display: block;
+    margin-right: 20px;
+}
+
+/* ----- Section présentation du projet "eHo" ----- */
+
+/*div.eHo_blocs {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.eHo_bloc {
+    width: 20%;
+    text-align: center;
+    background-color: var(--bleu_pastel);
+}
+
+div.eHo_bloc h3, div.eHo_bloc h4 {
+    margin: 10px;
+}
+
+div.eHo_bloc h3 {
+    color: var(--orange);
+}
+
+div.eHo_bloc h4 {
+    color: var(--blanc);
+}*/
+
+div.eHo_blocs {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+div.eHo_bloc {
+    width: 15%;
+    min-width: 200px;
+    display: flex;
+    margin: 40px;
+}
+
+div.jouer {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+div.jouer button {
+    padding: 0 100px;
+    color: var(--orange);
+    border: 2px solid var(--orange);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+div.jouer button:active {
+    background-color: #2F808C;
+}
+
+/* ----- Section "A propos" ----- */
+
+div.colonnes {
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+div.colonne {
+    height: 100%;
+    width: 45%;
+    margin: auto;
+}
+
+iframe.google_maps {
+    height: 50vh;
+    width: 100%;
+}
+
+/* ----- Footer ----- */
+
+footer {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    text-align: center;
+    background-color: var(--bleu_profond);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ----- Media Query ----- */
+
+@media screen and (min-width: 1921px) {
+    html {
+        font-size: 1vw;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    body {
+        background-attachment: scroll;
+    }
+    h1, h2 {
+        margin: 15px 0;
+    }
+    div.bandeau {
+        height: auto;
+        margin-top: 5vh;
+    }
+    div.categories {
+        display: none;
+    }
+    div.pictos_categories {
+        display: flex;
+    }
+    div.centre {
+        width: 90%;
+        gap: 5vh;
+    }
+    div.jouer button {
+        padding: 0 50px;
+    }
+    div.colonnes {
+        flex-direction: column;
+        margin: 0;
+    }
+    div.colonne {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 349px) {
+    div.navigation {
+        height: 5vh;
+    }
+    footer {
+        height: 5vh;
+    }
+    div.pictos_categories a {
+        margin-right: 10px;
+    }
+    div.eHo_bloc {
+        margin: 40px 0;
+    }
+}

@@ -1,0 +1,9 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^esteam\.mmi\-velizy\.fr$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.esteam\.mmi\-velizy\.fr$
+RewriteRule ^index\.html$ "https\:\/\/www\.esteam\.mmi\-velizy\.fr\/" [R=301,L]
+
+ErrorDocument 404 /404.html
+
+Header set Access-Control-Allow-Origin "https://www.esteam.mmi-velizy.fr"

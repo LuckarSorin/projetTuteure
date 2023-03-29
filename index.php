@@ -12,6 +12,7 @@
     </head>
     <body class="fond_sombre">
         <div id="misesajour"></div>
+        
         <div class="accueil_centre">
             <div class="flex_colonne">
                 <div class="flex bandeau_superieur">
@@ -20,23 +21,24 @@
                 </div>
                 <div class="flex hover_decoration">
                     <hr>
-                    <h2><a href="">JOUER</a></h2>
+                    <h2><a href="./home.php">JOUER</a></h2>
                     <hr>
                 </div>
                 <div>
                     <div class="flex hover_decoration">
                         <hr>
-                        <p><a href="./seconnecter.php">Connexion</a></p>
+                        <p><a href="seconnecter.php">Connexion</a></p>
                         <hr>
                     </div>
                     <div class="flex hover_decoration">
                         <hr>
-                        <p><a href="./creationcompte.php">Créer un compte</a></p>
+                        <p><a href="creationcompte.php">Créer un compte</a></p>
                         <hr>
                     </div>
                 </div>
             </div>
         </div>
+        
         <div id="infos"></div>
     </body>
 </html>

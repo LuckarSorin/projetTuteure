@@ -1,3 +1,0 @@
-<?php
-  /*script de connexion*/
-?>

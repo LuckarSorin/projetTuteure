@@ -6,30 +6,30 @@
         <title>eHo - Création de compte</title>
     </head>
     <body>
-        <h1>eHo</h1>
-        <form action="./script/inscription.php" method="POST">
+        <a href="./"><h1>eHo</h1></a>
+        <form action="./controleurs/inscription.php" method="POST">
             <tr>
                 <td>
                     <label>Nom de compte</label>
-                    <input type="text" name="username" required/>
+                    <input type="text" name="nom" required/>
                 </td>
             </tr>
             <tr>
                 <td>
                     <label>Adresse Mail</label>
-                    <input type="email" name="mail" required/>
+                    <input type="email" name="email" required/>
                 </td>
             </tr>
             <tr>
                 <td>
                     <label>Mot de passe</label>
-                    <input type="password" name="mot de passe" required/>
+                    <input type="password" name="mot_de_passe" required/>
                 </td>
             </tr>
             <tr>
                 <td>
                     <label>Répéter mot de passe</label>
-                    <input type="password" name="mot de passe" required/>
+                    <input type="password" name="mot_de_passe_repete" required/>
                 </td>
             </tr>
 

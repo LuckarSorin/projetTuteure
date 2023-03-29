@@ -6,14 +6,14 @@
         <title>eHo - Connexion</title>
     </head>
     <body>
-        <h1>eHo</h1>
-        <form action="./script/connexion.php" method="POST">
+        <a href="./"><h1>eHo</h1></a>
+        <form action="./controleurs/connexion.php" method="POST">
             <tr>
                 <td>
                     <label>Nom de compte</label>
                 </td>
                 <td>
-                    <input type="text" name="username" required />
+                    <input type="text" name="nom" required />
                 </td>
             </tr>
             <tr>

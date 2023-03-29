@@ -1,0 +1,6 @@
+<?php
+/* script de deconnection*/
+
+
+
+?>

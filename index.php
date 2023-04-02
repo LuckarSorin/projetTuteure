@@ -1,6 +1,7 @@
 <?php
     /*si connecté renvoie à home.php*/
 ?>
+
 <html>
     <head>
         <meta charset="utf-8">

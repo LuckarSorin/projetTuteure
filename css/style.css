@@ -4,6 +4,7 @@
     --orange: #EBB029;
     --noir: #000000;
     --blanc: #FFFFFF;
+    --fond_bouton: #DBDBDB;
 }
 
 html {
@@ -43,13 +44,18 @@ section.blanc {
 }
 
 a {
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     cursor: pointer;
 }
 
-svg {
-    cursor: help;
-    user-select: none;
+a:any-link {
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
 }
 
 /* ----- Importation des polices ----- */
@@ -100,7 +106,7 @@ svg {
     font-family: 'Abolition', sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 3em;
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -108,7 +114,7 @@ h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 2em;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -116,42 +122,42 @@ h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-style: normal;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 1.7em;
+    font-size: 1.7rem;
 }
 
 h4 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 h5 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 
-p {
+p, button, input, textarea {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 span {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-style: italic;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -170,26 +176,103 @@ h3, h4, h5, p {
 
 aside.cookies_pas_de_consentement {
     width: 100%;
-    height: 7vh;
+    height: calc(7vh - 20px);
+    padding: 10px 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    row-gap: 10px;
+    column-gap: 15px;
     color: var(--noir);
+    background-color: var(--bleu_pastel);
+}
+
+aside.cookies_pas_de_consentement div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+aside p {
+    cursor: help;
+    border-bottom: 1px var(--noir) dashed;
+}
+
+button, input[type=submit] {
     background-color: var(--blanc);
+    border: 2px solid var(--noir) !important;
+    box-shadow: 3px 2px 1px var(--noir);
+    border-radius: 5px;
+}
+
+button:hover, input[type=submit]:hover {
+    background-color: var(--fond_bouton);
+}
+
+button:active, input[type=submit]:active {
+    background-color: var(--orange);
 }
 
 aside.cookies {
-    width: 100%;
     height: 7vh;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    color: var(--noir);
+}
+
+aside.cookies img {
+    transition: 0.3s transform ease-out;
+    animation: cookie_rebond 2s ease running alternate 1;
+}
+
+aside.cookies img:hover {
+    transform: scale(1.3) rotate(-20deg);
+}
+
+/* Crédits : https://codepen.io/nelledejones/pen/gOOPWrK */
+@keyframes cookie_rebond {
+  0% {
+    opacity: 0;
+    transform: scale(.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% { transform: scale(.9); }
+  100% { transform: scale(1); }
+}
+
+aside.panneau_cookies {
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     color: var(--noir);
-    background-color: var(--blanc);
+    background-color: #b5b5b55b;
+}
+
+aside.panneau_cookies > div {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 15px;
+    background-color: var(--bleu_pastel);
+}
+
+img.ouvrir_cookies {
+    cursor: pointer;
 }
 
 /* ----- Header ----- */
@@ -239,17 +322,29 @@ div.elements_en_bas div {
 
 div.elements_en_bas a {
     height: 60px;
-    display: block;
 }
 
 /* --- Images --- */
 
-img.width {
+.width {
     width: 100%;
 }
 
-img.height {
+.height {
     height: 100%
+}
+
+div.elements_en_bas img.height {
+    animation: fleche_eHo 1s ease-in running alternate infinite;
+}
+
+div.elements_en_bas img.height:hover {
+    animation-play-state: paused;
+}
+
+@keyframes fleche_eHo {
+  from {margin-top: -30px;}
+  to {margin-top: 10px;}
 }
 
 /* ----- Personnalisation du menu de navigation ----- */
@@ -271,7 +366,6 @@ div.picto {
 div.picto a {
     height: 100%;
     width: 100%;
-    display: block;
 }
 
 div.categories {
@@ -284,12 +378,11 @@ div.categories {
 div.categories a {
     height: fit-content;
     width: fit-content;
-    display: block;
     margin-right: 40px;
     color: var(--bleu_pastel);
 }
 
-div.categories a:hover {
+div.categories a:hover, a.underline:hover {
     color: var(--orange);
     text-decoration: underline;
 }
@@ -309,7 +402,6 @@ div.pictos_categories {
 div.pictos_categories a {
     height: 100%;
     width: fit-content;
-    display: block;
     margin-right: 20px;
 }
 
@@ -353,8 +445,16 @@ div.eHo_blocs {
 div.eHo_bloc {
     width: 15%;
     min-width: 200px;
-    display: flex;
     margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+}
+
+div.eHo_bloc svg {
+    cursor: help;
+    user-select: none;
 }
 
 div.jouer {
@@ -363,15 +463,20 @@ div.jouer {
     margin: 40px 0;
 }
 
-div.jouer button {
+div.jouer a {
     padding: 0 100px;
     color: var(--orange);
+    background-color: var(--blanc);
     border: 2px solid var(--orange);
     border-radius: 15px;
     cursor: pointer;
 }
 
-div.jouer button:active {
+div.jouer a:hover {
+    background-color: var(--fond_bouton);
+}
+
+div.jouer a:active {
     background-color: #2F808C;
 }
 
@@ -394,11 +499,43 @@ iframe.google_maps {
     width: 100%;
 }
 
+/* ----- Section "Contact" ----- */
+
+form.formulaire_contact {
+    width: 50%;
+    max-width: 800px;
+    margin: auto auto 40px auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+form.formulaire_contact input, form.formulaire_contact textarea {
+    width: calc(100% - 18px);
+    padding: 4px 8px;
+    border: 1px #666666 solid;
+    border-radius: 5px;
+    resize: none;
+}
+
+form.formulaire_contact input[type=submit] {
+    width: 50%;
+    max-width: 200px;
+    margin: auto;
+    cursor: pointer;
+}
+
+img.plan {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
 /* ----- Footer ----- */
 
 footer {
+    height: calc(7vh - 20px);
     width: 100%;
-    height: 7vh;
+    padding: 10px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -407,24 +544,89 @@ footer {
     background-color: var(--bleu_profond);
 }
 
+footer div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer > div {
+    row-gap: 10px;
+    column-gap: 30px;
+}
+
+div.reseaux_sociaux {
+    column-gap: 15px;
+}
+
+div.reseaux_sociaux svg {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    transition: 0.2s padding ease-out;
+}
+
+div.reseaux_sociaux svg:hover {
+    padding-bottom: 15px;
+}
+
+div.reseaux_sociaux svg:hover {
+    fill: var(--orange);
+}
+
 footer p {
     margin: 0;
 }
 
+footer a.icons8:hover {
+    color: var(--blanc);
+}
+
+/* Limite pour les grands écrans > 1920px */
+
+main section > *, nav, aside.panneau_cookies > div {
+    max-width: 1920px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
 /* ----- Media Query ----- */
 
-@media screen and (min-width: 1921px) {
+@media screen and (min-width: 3841px) {
+    html {
+        font-size: 0.5vw;
+    }
+}
+
+@media screen and (min-width: 1921px) and (max-width: 3840px) {
     html {
         font-size: 1vw;
     }
 }
 
 @media screen and (max-width: 999px) {
-    body {
-        background-attachment: scroll;
+    * {
+        animation: none !important;
+        transition: none !important;
     }
     h1, h2 {
         margin: 15px 0;
+    }
+    aside.cookies img {
+        transform: none !important;
+    }
+    aside.panneau_cookies div {
+        flex-direction: column;
+    }
+    aside.cookies_pas_de_consentement {
+        height: fit-content;
+    }
+    aside.cookies_pas_de_consentement img {
+        display: none;
+    }
+    aside p {
+        border-bottom: none;
     }
     div.bandeau {
         height: auto;
@@ -440,7 +642,7 @@ footer p {
         width: 90%;
         gap: 5vh;
     }
-    div.jouer button {
+    div.jouer a {
         padding: 0 50px;
     }
     div.colonnes {
@@ -451,15 +653,30 @@ footer p {
         width: 80%;
         margin-bottom: 40px;
     }
+    form.formulaire_contact {
+        width: 80%;
+    }
+    footer {
+        height: fit-content;
+    }
+    footer > div {
+        flex-direction: column;
+    }
+    div.reseaux_sociaux svg:hover {
+        padding-bottom: 0;
+    }
 }
 
 @media screen and (max-width: 349px) {
+    aside.cookies_pas_de_consentement {
+        flex-direction: column;
+    }
     div.navigation {
         height: 5vh;
     }
-    footer {
+    /*footer {
         height: 5vh;
-    }
+    }*/
     div.pictos_categories a {
         margin-right: 10px;
     }

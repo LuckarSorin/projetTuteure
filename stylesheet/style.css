@@ -1,49 +1,66 @@
-/* --- Déclaration des variables de style --- */
+/* __________ Déclaration des variables de style __________ */
 
 :root {
-    --background_color: #000000; /* A modifier par la couleur d'arrière-plan définie dans la charte graphique */
+    --fond_sombre: #001623; /* A modifier par la couleur d'arrière-plan définie dans la charte graphique */
+    --fond_moyen: #001e35; /* Idem */
+    --fond_clair: #022942; /* Idem */
+    --texte : #000000; /* Idem */
     --texte_sur_fond_sombre : #FFFFFF; /* Idem */
+    --accentuation: #ff6357; /* Idem */
 }
 
-/* --- Importation des typos --- */
+/* __________ Importation des typos __________ */
 
-/* --- Déclaration des Media Queries --- */
+/* __________ Déclaration des Media Queries __________ */
 
-/* --- Style généraux --- */
+/* __________ Style généraux __________ */
 
 body {
     height: 100vh;
     width: 100vw;
     margin: 0;
     padding: 0;
+    color: var(--texte);
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, p, label {
+    margin: 0;
+    color: inherit;
+    text-align: left;
 }
 
 h1 {
-    margin: 0;
+    padding: 1rem 0;
+    /*font-size: ?rem;*/
 }
-
 h2 {
-    margin: 0;
+    padding: 1rem 0;
+    /*font-size: ?rem;*/
+    color: var(--accentuation);
 }
-
 h3 {
-    margin: 0;
+    padding: 0.8rem 0;
+    /*font-size: ?rem;*/
 }
-
 h4 {
-    margin: 0;
+    padding: 0.8rem 0;
+    /*font-size: ?rem;*/
 }
-
 h5 {
-    margin: 0;
+    padding: 0.6rem 0;
+    /*font-size: ?rem;*/
 }
-
 h6 {
-    margin: 0;
+    padding: 0.6rem 0;
+    /*font-size: ?rem;*/
 }
-
-p {
-    margin: 0;
+p, label {
+    padding: 0.5rem 0;
+    /*font-size: ?rem;*/
+}
+span {
+    /*font-size: ?rem;*/
 }
 
 a {
@@ -53,18 +70,30 @@ a {
     cursor: pointer;
 }
 
-div.flex {
+.flex {
     display: flex;
 }
 
-/* --- Style des pages accueil, connexion et paramètres de l'application --- */
+/* __________ Style des pages accueil, connexion et paramètres de l'application __________ */
 
-body.fond_sombre {
-    background-color: var(--background_color);
+/* --- Style de la page index.php --- */
+
+.fond_sombre {
+    background-color: var(--fond_sombre);
+    color: var(--texte_sur_fond_sombre);
 }
 
-body.fond_sombre h1, body.fond_sombre h2, body.fond_sombre h3, body.fond_sombre h4, body.fond_sombre h5, body.fond_sombre h6, body.fond_sombre p {
+.fond_moyen {
+    background-color: var(--fond_moyen);
     color: var(--texte_sur_fond_sombre);
+}
+
+.fond_clair {
+    background-color: var(--fond_clair);
+    color: var(--texte_sur_fond_sombre);
+}
+
+h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center, label.center {
     text-align: center;
 }
 
@@ -78,7 +107,6 @@ div.flex_colonne {
     height: calc(100% - 20vh);
     width: 100%;
     padding: 10vh 0;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
@@ -106,4 +134,23 @@ div.hover_decoration:hover hr {
 
 div.hover_decoration:hover h2, div.hover_decoration:hover p {
     margin: 0 10px;
+}
+
+/* --- Style de la page accueil.php --- */
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+}
+
+section.configurations > div:nth-child(odd) {
+    background: var(--fond_moyen);
+}
+
+section.configurations > div:nth-child(even) {
+    background: var(--fond_clair);
 }

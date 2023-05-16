@@ -1,12 +1,17 @@
 /* __________ Déclaration des variables de style __________ */
 
 :root {
-    --fond_sombre: #001623; /* A modifier par la couleur d'arrière-plan définie dans la charte graphique */
-    --fond_moyen: #001e35; /* Idem */
-    --fond_clair: #022942; /* Idem */
+    /* --- Spécifique --- */
+    --fond_sombre: #001724; /* A modifier par la couleur d'arrière-plan définie dans la charte graphique */
+    --fond_moyen: #001E35; /* Idem */
+    --fond_clair: #032942; /* Idem */
     --texte : #000000; /* Idem */
     --texte_sur_fond_sombre : #FFFFFF; /* Idem */
-    --accentuation: #ff6357; /* Idem */
+    --accentuation: #FF6357; /* Idem */
+    
+    /* --- Couleurs --- */
+    --blanc: #FFFFFF;
+    --noir: #000000;
 }
 
 /* __________ Importation des typos __________ */
@@ -21,10 +26,12 @@ body {
     margin: 0;
     padding: 0;
     color: var(--texte);
+    font-family: verdana;
     font-size: 16px;
+    word-break: break-word;
 }
 
-h1, h2, h3, h4, h5, h6, p, label {
+h1, h2, h3, h4, h5, h6, p, label, summary {
     margin: 0;
     color: inherit;
     text-align: left;
@@ -36,7 +43,7 @@ h1 {
 }
 h2 {
     padding: 1rem 0;
-    /*font-size: ?rem;*/
+    font-size: 2rem;
     color: var(--accentuation);
 }
 h3 {
@@ -55,7 +62,7 @@ h6 {
     padding: 0.6rem 0;
     /*font-size: ?rem;*/
 }
-p, label {
+p, label, summary {
     padding: 0.5rem 0;
     /*font-size: ?rem;*/
 }
@@ -68,6 +75,15 @@ a {
     color: inherit;
     text-decoration: none;
     cursor: pointer;
+}
+
+figure {
+    margin: 0;
+}
+
+figure img {
+    height: 100%;
+    width: 100%;
 }
 
 .flex {
@@ -93,7 +109,7 @@ a {
     color: var(--texte_sur_fond_sombre);
 }
 
-h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center, label.center {
+.center {
     text-align: center;
 }
 
@@ -140,11 +156,64 @@ div.hover_decoration:hover h2, div.hover_decoration:hover p {
 
 main {
     height: 100%;
+    width: 85%;
+}
+
+aside.menu {
+    height: 100%;
+    width: 15%;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+aside.menu figure.eho {
+    height: 5rem;
+    max-width: 80%;
+    padding: 2rem 0;
+}
+
+aside.menu details {
     width: 100%;
+    border-bottom: 1px solid var(--blanc);
+    cursor: pointer;
+}
+
+aside.menu details * {
+    margin: 0 1.5rem;
+}
+
+aside.menu details:hover {
+    border-bottom-color: var(--accentuation);
+}
+
+aside.menu *:hover, aside.menu details summary:hover, aside.menu details p:hover { /* Ne marche pas : aside.menu details *:hover */
+    color: var(--accentuation);
 }
 
 nav {
     width: 100%;
+    border-bottom: 2px solid var(--blanc);
+}
+
+nav figure.profil {
+    height: 3.03rem;
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+}
+
+section.configurations > div {
+    padding: 1px 1rem;
+    cursor: pointer;
+}
+
+section.configurations > div:hover {
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 1px var(--accentuation);
+    border-style: solid none solid none;
+    color: var(--accentuation);
 }
 
 section.configurations > div:nth-child(odd) {

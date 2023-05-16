@@ -18,7 +18,7 @@
                 </div>
                 <div class="flex hover_decoration">
                     <hr>
-                    <h2 class="center"><a href="./home.php">JOUER</a></h2>
+                    <h2 class="center"><a href="./home.php">SIMULEZ</a></h2>
                     <hr>
                 </div>
                 <div>

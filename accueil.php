@@ -9,30 +9,57 @@
         <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
         <link rel="icon" type="image/svg" href="assets/img/favicon.svg">
     </head>
-    <body class="fond_sombre">
-        <aside class="fond_sombre"></aside>
+    <body class="fond_sombre flex">
+        <aside class="fond_sombre flex menu">
+            <figure class="eho">
+                <a href="./index.php">
+                    <img src="assets/img/placeholder.png" alt="eHo" title="eHo">
+                </a>
+            </figure>
+            <details>
+                <summary>Nouvelle simulation</summary>
+                <p><a href="https://eho.esteam.mmi-velizy.fr/game.php">Nouvelle simulation</a></p>
+            </details>
+            <details>
+                <summary>Mon compte</summary>
+                <p>[...]</p>
+                <p>[...]</p>
+                <p>[...]</p>
+            </details>
+            <details>
+                <summary>Mes sauvegardes</summary>
+                <p><a href="?page=1">Consulter mes sauvegardes</a></p>
+                <p><a href="?page=2">Gérer mes sauvegardes</a></p>
+                <p><a href="?page=3">Ajouter une sauvegarde</a></p>
+            </details>
+            <details>
+                <summary>Paramètres</summary>
+                <p>[...]</p>
+                <p>[...]</p>
+                <p>[...]</p>
+            </details>
+        </aside>
         <main>
-            <nav class="fond_sombre">
-                <h2 class="center">Mes sauvegardes</h2>
-            </nav>
-            <section class="configurations">
-                <div>
-                    <p>Configuration 1 : Ma maison</p>
-                    <p><span>19/01/2023 20h38</span></p>
-                </div>
-                <div>
-                    <p>Configuration 2 : Ma maison de campagne</p>
-                    <p><span>23/01/2023 12h08</span></p>
-                </div>
-                <div>
-                    <p>Configuration 3 : Mon appartement</p>
-                    <p><span>20/02/2023 00h02</span></p>
-                </div>
-                <div>
-                    <p>Configuration 4 : Ma maison 2</p>
-                    <p><span>19/03/2023 14h34</span></p>
-                </div>
-            </section>
+            <?php
+                $page = $_GET['page'];
+                
+                switch ($page) {
+                    case "1":
+                        include('./accueil/sauvegardes.html');
+                        break;
+                    case "2":
+                        include('./accueil/sauvegardes.html');
+                        break;
+                    case "3":
+                        include('./accueil/sauvegardes.html');
+                        break;
+                    default:
+                        include('./accueil/sauvegardes.html');
+                }
+                
+                // A faire en JQuery finalement, ce sera mieux. Si possible prévoir le cas où JS désactivé
+            ?>
         </main>
+        <!-- Sélection des configurations en JQuery -->
     </body>
 </html>

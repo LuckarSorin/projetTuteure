@@ -12,13 +12,13 @@
     <body class="fond_sombre flex">
         <aside class="fond_sombre flex menu">
             <figure class="eho">
-                <a href="./index.php">
-                    <img src="assets/img/placeholder.png" alt="eHo" title="eHo">
+                <a href="https://eho.esteam.mmi-velizy.fr">
+                    <img src="assets/img/logo_bottom.svg" alt="eHo" title="eHo">
                 </a>
             </figure>
             <details>
                 <summary>Nouvelle simulation</summary>
-                <p><a href="https://eho.esteam.mmi-velizy.fr/game.php">Nouvelle simulation</a></p>
+                <p><a href="https://eho.esteam.mmi-velizy.fr/jeu.php">Nouvelle simulation</a></p>
             </details>
             <details>
                 <summary>Mon compte</summary>

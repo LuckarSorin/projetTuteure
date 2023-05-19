@@ -14,22 +14,22 @@
         <div class="accueil_centre">
             <div class="flex flex_colonne">
                 <div class="flex bandeau_superieur">
-                    <img src="assets/img/placeholder.png" alt="Logo de l'application eHo">
+                    <img class="width" src="assets/img/logo_left.svg" alt="Logo de l'application eHo">
                 </div>
                 <div class="flex hover_decoration">
                     <hr>
-                    <h2 class="center"><a href="./home.php">SIMULEZ</a></h2>
+                    <h1 class="center"><a href="jeu.php">SIMULEZ</a></h1>
                     <hr>
                 </div>
                 <div>
                     <div class="flex hover_decoration">
                         <hr>
-                        <p class="center"><a href="seconnecter.php">Connexion</a></p>
+                        <p class="center"><a href="connexion.php">Connexion</a></p>
                         <hr>
                     </div>
                     <div class="flex hover_decoration">
                         <hr>
-                        <p class="center"><a href="creationcompte.php">Créer un compte</a></p>
+                        <p class="center"><a href="inscription.php">Créer un compte</a></p>
                         <hr>
                     </div>
                 </div>

@@ -31,33 +31,33 @@ body {
     word-break: break-word;
 }
 
-h1, h2, h3, p, label, summary {
+h1, h2, h3, p, label, summary, figcaption {
     margin: 0;
     color: inherit;
     text-align: left;
 }
 
 h1 {
-    padding: 1rem 0;
+    padding: 2rem 0 1rem 0;
     font-size: 3.75rem;
     font-weight: 600;
     font-style: normal;
 }
 h2 {
-    padding: 1rem 0;
+    padding: 2rem 0 1rem 0;
     font-size: 3rem;
     font-weight: 100;
     font-style: normal;
 }
 h3 {
-    padding: 0.8rem 0;
+    padding: 1.4rem 0 0.8rem 0;
     font-size: 3rem;
     font-weight: 100;
     font-style: normal;
     color: var(--accentuation);
 }
-p, label, summary {
-    padding: 0.5rem 0;
+p, label, summary, figcaption {
+    padding: 0.7rem 0 0.5rem 0;
     font-size: 1rem;
     font-weight: 400;
     font-style: normal;
@@ -92,11 +92,13 @@ img.width {
 
 .flex {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* __________ Style des pages accueil, connexion et paramètres de l'application __________ */
-
-/* --- Style de la page index.php --- */
+.center {
+    text-align: center;
+}
 
 .fond_sombre {
     background-color: var(--fond_sombre);
@@ -113,9 +115,9 @@ img.width {
     color: var(--texte_sur_fond_sombre);
 }
 
-.center {
-    text-align: center;
-}
+/* __________ Style des pages accueil, connexion et paramètres de l'application __________ */
+
+/* --- Style de la page index.php --- */
 
 div.accueil_centre {
     height: 100%;
@@ -128,19 +130,15 @@ div.flex_colonne {
     height: calc(100% - 20vh);
     width: 100%;
     padding: 10vh 0;
-    align-items: center;
-    justify-content: space-between;
     flex-direction: column;
     flex-wrap: nowrap;
 }
 
 div.bandeau_superieur {
-    align-items: center;
     justify-content: center;
 }
 
 div.hover_decoration {
-    align-items: center;
     justify-content: center;
 }
 
@@ -153,11 +151,11 @@ div.hover_decoration:hover hr {
     display: block;
 }
 
-div.hover_decoration:hover h2, div.hover_decoration:hover p {
+div.hover_decoration:hover h1, div.hover_decoration:hover p {
     margin: 0 10px;
 }
 
-/* --- Style de la page accueil.php --- */
+/* --- Style de la page accueil.php et des menus menu_logged.html et menu_guest.html --- */
 
 main {
     height: 100%;
@@ -168,7 +166,6 @@ aside.menu {
     height: 100%;
     width: 15%;
     min-width: 80px;
-    align-items: center;
     justify-content: flex-start;
     flex-direction: column;
 }
@@ -185,7 +182,7 @@ aside.menu details {
     cursor: pointer;
 }
 
-aside.menu details * {
+aside.menu details > * {
     margin: 0 1.5rem;
 }
 
@@ -198,15 +195,25 @@ aside.menu *:hover, aside.menu details summary:hover, aside.menu details p:hover
 }
 
 nav {
-    padding: 0 1rem;
-    align-items: center;
-    justify-content: space-between;
+    padding: 1rem;
     border-bottom: 2px solid var(--blanc);
+}
+
+nav.accueil {
+    padding: 0 1rem;
+}
+
+nav figure.eho {
+    height: 50px;
 }
 
 nav figure.profil {
     height: 50px;
     width: 50px;
+}
+
+nav figure.profil:hover {
+    filter: brightness(0) invert(1);
 }
 
 section.configurations > div {
@@ -228,6 +235,18 @@ section.configurations > div:nth-child(odd) {
 
 section.configurations > div:nth-child(even) {
     background: var(--fond_clair);
+}
+
+/* --- Style de la page jeu.php --- */
+
+div.selection figure {
+    width: 200px;
+    cursor: pointer;
+}
+
+div.selection figure img {
+    height: 200px;
+    width: 200px;
 }
 
 /* __________ Déclaration des Media Queries __________ */

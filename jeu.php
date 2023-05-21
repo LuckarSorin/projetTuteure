@@ -8,6 +8,7 @@
         <title>eHo - Le jeu</title>
         <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
         <link rel="icon" type="image/svg" href="assets/img/favicon.svg">
+        <script src="assets/js/jquery.js"></script>
     </head>
     <body class="fond_sombre">
         <?php
@@ -19,25 +20,12 @@
                 include("./includes/menu_guest.html");
             }
         ?>
-        <aside>
-            <p class="center">Bienvenue sur eHo, le simulateur de consommation pour vous aider à réduire votre consommation énergétique [à reformuler]</p>
-        </aside>
-        <h2 class="center">Pour commencer, sélectionnez votre habitation</h2>
-        <section>
-            <div class="selection">
-                <div class="flex images">
-                    <figure>
-                        <img src="assets/img/logo_bottom.svg" alt="eHo" title="eHo">
-                        <figcaption class="center">Maison</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="assets/img/logo_bottom.svg" alt="eHo" title="eHo">
-                        <figcaption class="center">Appartement</figcaption>
-                    </figure>
-                </div>
-                <div class="curseur"></div>
-                <a href="">Suivant</a>
-            </div>
-        </section>
+        <main class="jeu">
+            <?php
+                include("./jeu/choix_habitation.html");
+                
+                // TODO => Vérifier que habitat vaut bien soit 1 soit 3
+            ?>
+        </main>
     </body>
 </html>

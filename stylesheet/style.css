@@ -73,6 +73,26 @@ a {
     cursor: pointer;
 }
 
+input[type=range] {
+    height: 2px;
+    background-color: var(--blanc);
+    appearance: none;
+    cursor: pointer;
+}
+
+::-webkit-slider-thumb {
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--fond_sombre);
+    border: 1px solid var(--accentuation);
+    border-radius: 100%;
+    appearance: none;
+}
+
+::-webkit-slider-thumb:hover {
+    border-width: 2px;
+}
+
 figure {
     margin: 0;
 }
@@ -157,7 +177,7 @@ div.hover_decoration:hover h1, div.hover_decoration:hover p {
 
 /* --- Style de la page accueil.php et des menus menu_logged.html et menu_guest.html --- */
 
-main {
+main.accueil {
     height: 100%;
     width: 85%;
 }
@@ -239,21 +259,79 @@ section.configurations > div:nth-child(even) {
 
 /* --- Style de la page jeu.php --- */
 
-div.selection figure {
-    width: 200px;
+main.jeu {
+    transform: translateY(25%);
+}
+
+main.jeu h2 {
+    margin-bottom: 5rem;
+}
+
+div.selection {
+    width: 60%;
+    margin: auto;
+}
+
+div.selection .curseur {
+    width: 322px;
+    margin: 2rem auto auto auto;
+}
+
+div.selection .curseur input {
+    width: 100%;
+}
+
+div.selection .curseur > div {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--blanc);
     cursor: pointer;
 }
 
-div.selection figure img {
+div.selection .images figure {
+    width: 200px;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+div.selection .images figure img {
     height: 200px;
     width: 200px;
 }
 
+div.selection .images figure.selected {
+    background-color: var(--fond_clair);
+}
+
+div.selection .images figure.selected figcaption {
+    color: var(--accentuation);
+}
+
+div.selection .bouton {
+    width: fit-content;
+    margin: 2rem auto auto auto;
+}
+
 /* __________ Déclaration des Media Queries __________ */
 
+@media screen and (max-width: 64rem) {
+    figure.vide {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 40rem) {
-    nav {
+    nav.accueil {
         flex-direction: column-reverse;
         padding: 1.5rem 1rem;
+    }
+    div.selection .images {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    div.selection .curseur {
+        display: none;
     }
 }

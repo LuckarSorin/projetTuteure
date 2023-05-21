@@ -40,34 +40,13 @@
                 <p>[...]</p>
             </details>
         </aside>
-        <main>
-            <?php
-                /*
-                
-                $page = $_GET['page'] ?? 0;
-                
-                switch ($page) {
-                    case "1":
-                        include('./accueil/sauvegardes.html');
-                        break;
-                    case "2":
-                        include('./accueil/sauvegardes.html');
-                        break;
-                    case "3":
-                        include('./accueil/sauvegardes.html');
-                        break;
-                    default:
-                        include('./accueil/sauvegardes.html');
-                }
-                
-                */
-                
-                // A faire en JQuery finalement, ce sera mieux. Si possible prévoir le cas où JS désactivé
-            ?>
+        <main class="accueil">
         </main>
         <!-- Sélection des configurations en JQuery -->
         <script>
             $(document).ready(function() {
+                getInclude(1);
+                
                 // Fonction qui appelle via AJAX le fichier ajax_accueil_includes.php qui s'occupe de [...]
                 function getInclude(number) {
                     jQuery.ajax({
@@ -80,12 +59,6 @@
                         success: function(response) {
                             console.log(response);
                             $("main").load(response);
-                            /*if (JSON.parse(response) == true) {
-                                console.log("Test cookie accepté");
-                            }
-                            else {
-                                console.log("Test cookie refusé");
-                            }*/
                         }
                     });
                     console.log("AJAX DONE");
@@ -95,27 +68,6 @@
                     $this = $(this);
                     getInclude($this.attr('class').substr($this.attr('class').indexOf(" ") + 1));
                 });
-                
-                /*
-                
-                // Détection des clics des boutons de consentement des cookies
-                $('button.cookies_acceptes').on('click', function(){
-                    googleMapsCookiesAccept(true);
-                    $('aside.panneau_cookies').animate({opacity: 'hide', height: 'hide'}, 'slow');
-                });
-                $('button.cookies_refuses').on('click', function(){
-                    googleMapsCookiesAccept(false);
-                    $('aside.panneau_cookies').animate({opacity: 'hide', height: 'hide'}, 'slow');
-                });
-                // Détection du clic sur l'image pour ouvrir le panneau de configuration des cookies
-                $('img.ouvrir_cookies').on('click', function() {
-                    $('aside.panneau_cookies').animate({opacity: 'toggle', height: 'toggle'}, 'slow');
-                });
-                $('button.fermer_panneau').on('click', function() {
-                    $('aside.panneau_cookies').animate({opacity: 'hide', height: 'hide'}, 'slow');
-                });
-                
-                */
             });
         </script>
     </body>

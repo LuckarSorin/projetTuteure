@@ -37,22 +37,22 @@
         
         /* __________ Sélection du bon habitat __________ */
         // En fonction de la position du curseur
-        $("div.selection .bouton").hide();
+        $("div.selection .bouton").css("visibility", "hidden");
         
         $(document).on("input change", "div.selection .curseur input", function() {
             $("div.selection .images figure").removeClass("selected");
             var idhabitat = $("div.selection .curseur input").val();
             $("div.selection .bouton a").attr("href", "?habitat=" + idhabitat);
             if (idhabitat == 2) {
-                $("div.selection .bouton").hide();
+                $("div.selection .bouton").css("visibility", "hidden");
             }
             else if (idhabitat == 3) {
                 $("div.selection .images figure").last().addClass("selected");
-                $("div.selection .bouton").show();
+                $("div.selection .bouton").css("visibility", "visible");
             }
             else {
                 $("div.selection .images figure").first().addClass("selected");
-                $("div.selection .bouton").show();
+                $("div.selection .bouton").css("visibility", "visible");
             }
         });
         
@@ -63,12 +63,12 @@
             if ($("div.selection .images figure").first().hasClass("selected")) {
                 $("div.selection .curseur input").val(1);
                 $("div.selection .bouton a").attr("href", "?habitat=1");
-                $("div.selection .bouton").show();
+                $("div.selection .bouton").css("visibility", "visible");
             }
             else {
                 $("div.selection .curseur input").val(3);
                 $("div.selection .bouton a").attr("href", "?habitat=3");
-                $("div.selection .bouton").show();
+                $("div.selection .bouton").css("visibility", "visible");
             }
         });
     });

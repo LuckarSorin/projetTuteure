@@ -1,0 +1,22 @@
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 251.83 236.65">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <g id="Page_sauvegardes" data-name="Page sauvegardes">
+    <g>
+      <rect class="cls-1" x="99.31" y="146.05" width="53.22" height="88.1"/>
+      <polygon class="cls-2" points="14.41 70.01 14.41 2.5 30.96 2.5 30.96 37.01 48.27 2.5 203.55 2.5 247.78 90.67 226.53 90.67 226.53 234.15 25.29 234.15 25.29 90.67 4.05 90.67 14.41 70.01"/>
+    </g>
+  </g>
+</svg>

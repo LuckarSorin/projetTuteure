@@ -1,0 +1,32 @@
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248.58 236.8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <g id="Page_sauvegardes" data-name="Page sauvegardes">
+    <g>
+      <rect class="cls-2" x="2.5" y="2.5" width="141.91" height="231.65"/>
+      <rect class="cls-2" x="144.56" y="50.65" width="101.51" height="183.65"/>
+      <g>
+        <rect class="cls-1" x="27.88" y="23.37" width="33.54" height="33.54"/>
+        <rect class="cls-1" x="27.88" y="84.78" width="33.54" height="33.54"/>
+        <rect class="cls-1" x="27.88" y="146.2" width="33.54" height="33.54"/>
+        <rect class="cls-1" x="85.49" y="23.37" width="33.54" height="33.54"/>
+        <rect class="cls-1" x="85.49" y="84.78" width="33.54" height="33.54"/>
+        <rect class="cls-1" x="85.49" y="146.2" width="33.54" height="33.54"/>
+      </g>
+      <rect class="cls-1" x="178.55" y="84.78" width="33.54" height="33.54"/>
+      <rect class="cls-1" x="178.55" y="146.2" width="33.54" height="33.54"/>
+    </g>
+  </g>
+</svg>

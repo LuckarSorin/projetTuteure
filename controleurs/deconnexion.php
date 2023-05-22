@@ -9,6 +9,6 @@
         unset($_SESSION['connected']);
         $_SESSION['connected']= NULL;
     }
-    header('Location: ../../index.php');
+    header('Location: ./../index.php');
 
 ?>

@@ -24,9 +24,9 @@ if (isset($_POST['nom']) && isset($_POST['email']) && isset($_POST['mot_de_passe
     $stmt->bindParam(':mot_de_passe', $mot_de_passe_hash);
 
     if ($stmt->execute()) {
-        echo "Inscription réussie. Vous pouvez maintenant vous connecter.";
+        header("Location: ../../index.php?r=0");
     } else {
-        echo "Erreur lors de l'inscription.";
+        header("Location: ../../inscription.php?r=1");
     }
 }
 ?>

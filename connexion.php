@@ -12,7 +12,19 @@
     </head>
     <body class="fond_sombre">
         <a href="./"><h1 class="center">eHo</h1></a>
-        <form action="./controleurs/connexion.php" method="POST">
+        <div class="erreurlog">
+            <?php
+                if(isset($_GET['r'])){
+                    if($_GET['r']==1){
+                        echo "Mot de passe incorrect.";
+                    }
+                    elseif($_GET['r']==2){
+                        echo "Nom d'utilisateur introuvable.";
+                    }
+                }
+            ?>
+        </div>
+        <form class="formulaires" action="./controleurs/connexion.php" method="POST">
             <tr>
                 <td>
                     <label>Nom de compte</label>

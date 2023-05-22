@@ -175,6 +175,12 @@ div.hover_decoration:hover h1, div.hover_decoration:hover p {
     margin: 0 10px;
 }
 
+/* --- Style de inscription et connexion --- */
+
+.formulaires {
+    text-align: center;
+}
+
 /* --- Style de la page accueil.php et des menus menu_logged.html et menu_guest.html --- */
 
 main.accueil {

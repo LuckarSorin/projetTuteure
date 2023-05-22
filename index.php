@@ -11,6 +11,12 @@
         <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>-->
     </head>
     <body class="fond_sombre">
+        <a href="./"><h1 class="center">eHo</h1></a>
+
+        <aside id="news">
+            <div></div>
+        </aside>
+
         <div class="accueil_centre">
             <div class="flex flex_colonne">
                 <div class="flex bandeau_superieur">
@@ -20,6 +26,15 @@
                     <hr>
                     <h1 class="center"><a href="jeu.php">SIMULEZ</a></h1>
                     <hr>
+                </div>
+                <div class="erreurlog">
+                    <?php
+                        if(isset($_GET['r'])){
+                            if($_GET['r']==0){
+                                echo "Inscription réussie. Vous pouvez maintenant vous connecter.";
+                            }
+                        }
+                    ?>
                 </div>
                 <div>
                     <div class="flex hover_decoration">
@@ -35,5 +50,10 @@
                 </div>
             </div>
         </div>
+
+        <aside id="updates">
+            <div></div>
+        </aside>
+
     </body>
 </html>

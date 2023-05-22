@@ -12,7 +12,16 @@
     </head>
     <body class="fond_sombre">
         <a href="./"><h1 class="center">eHo</h1></a>
-        <form action="./controleurs/inscription.php" method="POST">
+        <div class="erreurlog">
+            <?php
+                if(isset($_GET['r'])){
+                    if($_GET['r']==1){
+                        echo "Erreur lors de l'inscription.";
+                    }
+                }
+            ?>
+        </div>
+        <form class="formulaires" action="./controleurs/inscription.php" method="POST">
             <tr>
                 <td>
                     <label>Nom de compte</label>

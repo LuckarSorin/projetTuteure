@@ -19,12 +19,12 @@ if (isset($_POST['nom']) && isset($_POST['mot_de_passe'])) {
             $_SESSION['id'] = $row['id_Utilisateur'];
             $_SESSION['nom'] = $nom;
             header("Location: ./../accueil.php");
-            echo "Bon mot de passe";
+            echo "Bon mot de passe"; //jamais affiché camarade !
         } else {
-            echo "Mot de passe incorrect.";
+            header("Location: ../../connexion.php?r=1");
         }
     } else {
-        echo "Nom d'utilisateur introuvable.";
+        header("Location: ../../connexion.php?r=2");
     }
 }
 

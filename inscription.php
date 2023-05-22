@@ -57,10 +57,11 @@
             </tr>
         </br>
         </br>
-
             <tr>
                 <td>
                     <input type="submit" name="enter" value="S'inscrire">
+                </td>
+            </tr>
         </form>
     </body>
 </html>

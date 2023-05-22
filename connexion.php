@@ -47,7 +47,6 @@
             </tr>
         </br>
         </br>
-            
             <tr>
                 <td>
                     <input type="submit" name="enter" value="Se connecter">

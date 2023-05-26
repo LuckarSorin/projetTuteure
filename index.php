@@ -11,7 +11,6 @@
         <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>-->
     </head>
     <body class="fond_sombre">
-        <a href="./"><h1 class="center">eHo</h1></a>
 
         <aside id="news">
             <div></div>
@@ -19,6 +18,7 @@
 
         <div class="accueil_centre">
             <div class="flex flex_colonne">
+                <a href="./"><h1 class="center">eHo</h1></a>
                 <div class="flex bandeau_superieur">
                     <img class="width" src="assets/img/logo_left.svg" alt="Logo de l'application eHo">
                 </div>

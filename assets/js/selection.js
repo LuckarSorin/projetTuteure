@@ -16,3 +16,16 @@ function toggleSidebar() {
             var container = document.getElementById("room-container");
             container.removeChild(room);
         }
+
+        function addEquipment(equipment) {
+            var container = document.getElementById("room-container");
+            var room = document.createElement("div");
+            room.className = "room";
+            room.innerHTML = equipment + '<button class="delete-button" onclick="removeEquipment(this.parentNode)">Moins</button>';
+            container.appendChild(room);
+        }
+
+        function removeEquipment(room) {
+            var container = document.getElementById("room-container");
+            container.removeChild(room);
+        }

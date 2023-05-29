@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+    /*check si connecté*/
+?>
 <html>
 <head>
      <meta charset="utf-8">

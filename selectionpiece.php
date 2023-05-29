@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>Ma Maison</title>
+     <link rel="stylesheet" type="text/css" href="stylesheet/styleMaison.css">
+     <script src="assets/js/selection.js"></script>
 </head>
 <body>
     <div id="sidebar">

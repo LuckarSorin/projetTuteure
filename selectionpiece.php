@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ma Maison</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <title>Ma Maison</title>
     <link rel="stylesheet" type="text/css" href="stylesheet/styleMaison.css">
     <script src="assets/js/selection.js"></script>
 </head>

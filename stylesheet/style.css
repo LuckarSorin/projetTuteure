@@ -120,7 +120,7 @@ img.width {
     text-align: center;
 }
 
-.fond_sombre {
+body.fond_sombre {
     background-color: var(--fond_sombre);
     color: var(--texte_sur_fond_sombre);
 }
@@ -318,6 +318,15 @@ div.selection .images figure.selected figcaption {
 div.selection .bouton {
     width: fit-content;
     margin: 2rem auto auto auto;
+}
+
+/* _ Style des vues maison et piece _ */
+
+div.fond_sombre {
+    background-color: var(--fond_sombre);
+    color: var(--texte_sur_fond_sombre);
+    height: 95%;
+    width: 95%;
 }
 
 /* __________ Déclaration des Media Queries __________ */

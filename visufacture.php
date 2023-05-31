@@ -13,21 +13,21 @@
 
     <body>
 
-        <div id="menu">
+        <div id="menuvisu">
+
+            <a> partie 1 </a>
+            <a> partie 2 </a>
+            <a> Facture complète </a>
+
+            <button><a> Retour à la configuration </a></button>
 
         </div>
 
-        <button><a> ← </a></button>
+        <div class="visu">
 
-        <div class="fond_sombre">
-
-            <div class="maison">
-
-            </div>
+            <h2 class="titrevisu"> Facture pour cette configuration </h2>
 
         </div>
-
-        <button><a> Simuler </a></button>
 
     </body>
 </html>

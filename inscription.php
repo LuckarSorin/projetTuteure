@@ -11,7 +11,7 @@
         <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>-->
     </head>
     <body class="fond_sombre">
-        <a href="./"><h1 class="center">eHo</h1></a>
+        <a href="./"><h1 class="center"> eHo </h1></a>
         <div class="erreurlog">
             <?php
                 if(isset($_GET['r'])){
@@ -24,7 +24,7 @@
         <form class="formulaires" action="./controleurs/inscription.php" method="POST">
             <tr>
                 <td>
-                    <label>Nom de compte</label>
+                    <label> Nom de compte </label>
                     </br>
                     <input type="text" name="nom" required/>
                 </td>
@@ -33,7 +33,7 @@
         </br>
             <tr>
                 <td>
-                    <label>Adresse Mail</label>
+                    <label> Adresse Mail </label>
                     </br>
                     <input type="email" name="email" required/>
                 </td>
@@ -42,7 +42,7 @@
         </br>
             <tr>
                 <td>
-                    <label>Mot de passe</label>
+                    <label> Mot de passe </label>
                     </br>
                     <input type="password" name="mot_de_passe" required/>
                 </td>
@@ -51,7 +51,8 @@
         </br>
             <tr>
                 <td>
-                    <label>Répéter mot de passe</label>                    </br>
+                    <label> Répéter mot de passe </label>
+                    </br>
                     <input type="password" name="mot_de_passe_repete" required/>
                 </td>
             </tr>

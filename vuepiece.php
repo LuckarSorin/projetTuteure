@@ -17,9 +17,13 @@
 
         </div>
 
-        <button><a>←</a></button>
+        <button><a> ← </a></button>
 
         <div class="fond_sombre">
+
+            <div class="piece">
+
+            </div>
 
         </div>
 

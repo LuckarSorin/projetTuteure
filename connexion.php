@@ -11,7 +11,7 @@
         <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>-->
     </head>
     <body class="fond_sombre">
-        <a href="./"><h1 class="center">eHo</h1></a>
+        <a href="./"><h1 class="center"> eHo </h1></a>
         <div class="erreurlog">
             <?php
                 if(isset($_GET['r'])){
@@ -27,7 +27,7 @@
         <form class="formulaires" action="./controleurs/connexion.php" method="POST">
             <tr>
                 <td>
-                    <label>Nom de compte</label>
+                    <label> Nom de compte </label>
                 </td>
                 </br>
                 <td>
@@ -38,7 +38,7 @@
         </br>
             <tr>
                 <td>
-                    <label>Mot de passe</label>
+                    <label> Mot de passe </label>
                 </td>
                 </br>
                 <td>

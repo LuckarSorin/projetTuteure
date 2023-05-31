@@ -1,8 +1,8 @@
-/* __________ Importation des typos __________ */
+/** __________ Importation des typos __________ **/
 
 @import url("https://use.typekit.net/ttg6lsa.css");
 
-/* __________ Déclaration des variables de style __________ */
+/** __________ Déclaration des variables de style __________ **/
 
 :root {
     /* --- Spécifique --- */
@@ -18,7 +18,7 @@
     --noir: #000000;
 }
 
-/* __________ Style généraux __________ */
+/** __________ Style généraux __________ **/
 
 body {
     height: 100vh;
@@ -135,7 +135,9 @@ body.fond_sombre {
     color: var(--texte_sur_fond_sombre);
 }
 
-/* __________ Style des pages accueil, connexion et paramètres de l'application __________ */
+
+
+/** __________ Style des pages accueil, connexion et paramètres de l'application __________ **/
 
 /* --- Style de la page index.php --- */
 
@@ -263,6 +265,10 @@ section.configurations > div:nth-child(even) {
     background: var(--fond_clair);
 }
 
+
+
+/** __________ Style du jeu __________ **/
+
 /* --- Style de la page jeu.php --- */
 
 main.jeu {
@@ -320,7 +326,7 @@ div.selection .bouton {
     margin: 2rem auto auto auto;
 }
 
-/* _ Style des vues maison et piece _ */
+/* ___ Style des vues maison et piece et simulation ___ */
 
 div.fond_sombre {
     background-color: var(--fond_sombre);
@@ -329,7 +335,33 @@ div.fond_sombre {
     width: 95%;
 }
 
-/* __________ Déclaration des Media Queries __________ */
+/* --- Style maison --- */
+
+#maison{
+
+}
+
+/* --- Style pièce --- */
+
+#piece{
+
+}
+
+/* --- Style simulation --- */
+
+
+
+/** __________ Style visualisation __________ **/
+
+#menuvisu{
+
+}
+
+#visu{
+    
+}
+
+/** __________ Déclaration des Media Queries __________ **/
 
 @media screen and (max-width: 64rem) {
     figure.vide {

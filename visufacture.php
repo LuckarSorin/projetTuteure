@@ -27,6 +27,10 @@
 
             <h2 class="titrevisu"> Facture pour cette configuration </h2>
 
+            <div>
+                
+            </div>
+
         </div>
 
     </body>

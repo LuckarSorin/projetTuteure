@@ -19,9 +19,9 @@
                 
             </div>
 
-        </div>
+            <button><a href="./visufacture.php"> Visualiser votre consommation </a></button>
 
-        <button><a> Visualiser votre consommation </a></button>
+        </div>
 
     </body>
 </html>

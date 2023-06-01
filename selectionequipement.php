@@ -13,10 +13,15 @@
     <div id="sidebar">
         <h2>Équipements</h2>
         <ul>
-            <li><button onclick="addEquipment('Télévision')">Télévision</button></li>
-            <li><button onclick="addEquipment('Lumière')">Lumière</button></li>
- 
-            <li><button onclick="addEquipment('Lampe')">Lampe</button></li>
+            <li>
+                <button onclick="addEquipment('Télévision')">Télévision</button>
+            </li>
+            <li>
+                <button onclick="addEquipment('Lumière')">Lumière</button>
+            </li>
+            <li>
+                <button onclick="addEquipment('Lampe')">Lampe</button>
+            </li>
 
         </ul>
         <button onclick="toggleSidebar()">Rétracter</button>
@@ -25,7 +30,9 @@
     <div id="content">
         <h1>Salon</h1>
 
-        <div id="room-container" class="container"></div>
+        <div id="room-container" class="container">
+
+        </div>
     </div>
 </body>
 </html>

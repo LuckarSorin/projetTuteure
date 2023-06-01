@@ -24,7 +24,7 @@
                 }
             ?>
         </div>
-        <form class="formulaires" action="./controleurs/connexion.php" method="POST">
+        <form class="formulaires" action="./assets/controleurs/connexion.php" method="POST">
             <tr>
                 <td>
                     <label> Nom de compte </label>

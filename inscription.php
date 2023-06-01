@@ -21,7 +21,7 @@
                 }
             ?>
         </div>
-        <form class="formulaires" action="./controleurs/inscription.php" method="POST">
+        <form class="formulaires" action="./assets/controleurs/inscription.php" method="POST">
             <tr>
                 <td>
                     <label> Nom de compte </label>

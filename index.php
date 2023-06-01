@@ -39,7 +39,7 @@
                 <div>
                     <div class="flex hover_decoration">
                         <hr>
-                        <p class="center"><a href="connexion.php"> Connexion </a></p>
+                        <p class="center"><a href="./connexion.php"> Connexion </a></p>
                         <hr>
                     </div>
                     <div class="flex hover_decoration">

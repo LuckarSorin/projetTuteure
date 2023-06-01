@@ -51,7 +51,7 @@
                 function getInclude(number) {
                     jQuery.ajax({
                         type: "POST",
-                        url: "ajax/ajax_accueil_includes.php",
+                        url: "./assets/ajax/ajax_accueil_includes.php",
                         dataType: "text",
                         data: {
                             getInclude : number

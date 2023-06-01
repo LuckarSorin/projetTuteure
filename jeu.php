@@ -14,15 +14,15 @@
         <?php
             $logged = false; // TODO par l'équipe Back
             if($logged) { // TODO par l'équipe Back
-                include("./includes/menu_logged.html");
+                include("./includes/menu_logged.php");
             }
             else {
-                include("./includes/menu_guest.html");
+                include("./includes/menu_guest.php");
             }
         ?>
         <main class="jeu">
             <?php
-                include("./jeu/choix_habitation.html");
+                include("./includes/choix_habitation.php");
                 
                 // TODO => Vérifier que habitat vaut bien soit 1 soit 3
             ?>

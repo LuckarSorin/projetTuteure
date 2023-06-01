@@ -1,0 +1,6 @@
+[22-Mar-2023 11:39:12 UTC] PHP Fatal error:  Uncaught ArgumentCountError: define() expects at least 2 arguments, 1 given in /home/eho/public_html/assets/controleurs/config.php:4
+Stack trace:
+#0 /home/eho/public_html/assets/controleurs/config.php(4): define('PASSWD')
+#1 /home/eho/public_html/assets/controleurs/connexion.php(3): require_once('/home/eho/publi...')
+#2 {main}
+  thrown in /home/eho/public_html/assets/controleurs/config.php on line 4

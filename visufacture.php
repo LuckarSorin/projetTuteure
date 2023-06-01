@@ -15,9 +15,10 @@
 
         <div id="menuvisu">
 
-            <a> partie 1 </a>
-            <a> partie 2 </a>
-            <a> Facture complète </a>
+            <button><a> Consommation par type de source </a></button>
+            <button><a> Consommation par type de pièce </a></button>
+            <button><a> Facture </a></button>
+            <button><a> Vue globale </a></button>
 
             <button><a> Retour à la configuration </a></button>
 
@@ -28,7 +29,7 @@
             <h2 class="titrevisu"> Facture pour cette configuration </h2>
 
             <div>
-                
+
             </div>
 
         </div>

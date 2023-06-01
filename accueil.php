@@ -13,13 +13,13 @@
     <body class="fond_sombre flex">
         <aside class="fond_sombre flex menu">
             <figure class="eho">
-                <a href="./index">
+                <a href="https://www.eho.esteam.mmi-velizy.fr">
                     <img src="assets/img/logo_bottom.svg" alt="eHo" title="eHo">
                 </a>
             </figure>
             <details>
                 <summary>Nouvelle simulation</summary>
-                <p><a href="./jeu.php">Nouvelle simulation</a></p>
+                <p><a href="https://www.eho.esteam.mmi-velizy.fr/jeu.php">Nouvelle simulation</a></p>
             </details>
             <details>
                 <summary>Mon compte</summary>
@@ -51,7 +51,7 @@
                 function getInclude(number) {
                     jQuery.ajax({
                         type: "POST",
-                        url: "assets/ajax/ajax_accueil_includes.php",
+                        url: "./assets/ajax/ajax_accueil_includes.php",
                         dataType: "text",
                         data: {
                             getInclude : number

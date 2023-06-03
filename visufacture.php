@@ -11,16 +11,17 @@
         <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
         <!--script src="assets/js/MyCharts.js"></script-->
+        <script src="assets/js/visufacture.js"></script>
     </head>
     <body>
 
         <div id="menuvisu">
 
             <a href="./"><h2> eHo </h1></a>
-            <button><a> Consommation par type de source </a></button>
-            <button><a> Consommation par type de pièce </a></button>
-            <button><a> Facture </a></button>
-            <button><a> Vue globale </a></button>
+            <button onclick="changeInclude('source');"><a> Consommation par type de source </a></button>
+            <button onclick="changeInclude('piece');"><a> Consommation par type de pièce </a></button>
+            <button onclick="changeInclude('facture');"><a> Facture </a></button>
+            <button onclick="changeInclude('global');"><a> Vue globale </a></button>
 
             <button><a href="selectionpiece.php"> Retour à la configuration </a></button>
 

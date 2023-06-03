@@ -1,12 +1,12 @@
 /** _____ par source _____ **/
 
-var xValuesSource = ["Italy", "France", "Spain", "USA", "Argentina"];
+var xValuesSource = ["chauffage", "éléctroménagers", "Chauffe-eau", "appareils éléctronique", "prises éléctriques"];
 var yValuesSource = [55, 49, 44, 24, 15];
-var barColorsSource = ["red", "green","blue","orange","brown"];
+var barColorsSource = ["#b91d47","#00aba9","#2b5797","#e8c3b9","#1e7145"];
 
 /* --- values --- */
 
-new Chart("SourceValuesChart", {
+/*new Chart("SourceValuesChart", {
   type: "bar",
   data: {
     labels: xValuesSource,
@@ -16,33 +16,35 @@ new Chart("SourceValuesChart", {
     }]
   },
   options: {}
-});
+});*/
+
 
 /* --- percent --- */
 
 new Chart("SourcePercentChart", {
-    type: "pie",
-    data: {
-      labels: xValuesSource,
-      datasets: [{
-        backgroundColor: barColorsSource,
-        data: yValuesSource
-      }]
-    },
-    options: {
-      title: {
-        display: true,
-        text: "World Wide Wine Production"
-      }
+  type: "pie",
+  data: {
+    labels: xValuesSource,
+    datasets: [{
+    backgroundColor: barColorsSource,
+    data: yValuesSource
+    }]
+  },
+  options: {
+    title: {
+    display: true,
+    text: "Part de consommation par type de source"
     }
-  });
+  }
+});
+
 
 
 /** _____ par pièces _____ */
 
-var xValuesRoom = ["Italy", "France", "Spain", "USA", "Argentina"];
-var yValuesRoom = [55, 49, 44, 24, 15];
-var barColorsRoom = ["red", "green","blue","orange","brown"];
+var xValuesRoom = ["Cuisine", "Salon", "Salle de bain", "buandrie", "chambres", ""];
+var yValuesRoom = [55, 49, 44, 24, 20, 0];
+var barColorsRoom = ["red", "green","blue","orange","brown", "white"];
 
 /* --- values --- */
 
@@ -51,28 +53,35 @@ new Chart("RoomValuesChart", {
   data: {
     labels: xValuesRoom,
     datasets: [{
+    backgroundColor: barColorsRoom,
+    data: yValuesRoom
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+    display: true,
+    text: "Consommation par pièces"
+    }
+  }
+});
+
+
+/* --- percent --- */
+
+/*new Chart("RoomPercentChart", {
+  type: "doughnut",
+  data: {
+    labels: xValuesRoom,
+    datasets: [{
       backgroundColor: barColorsRoom,
       data: yValuesRoom
     }]
   },
-  options: {}
-});
-
-/* --- percent --- */
-
-new Chart("RoomPercentChart", {
-    type: "doughnut",
-    data: {
-      labels: xValuesRoom,
-      datasets: [{
-        backgroundColor: barColorsRoom,
-        data: yValuesRoom
-      }]
-    },
-    options: {
-      title: {
-        display: true,
-        text: "World Wide Wine Production"
-      }
+  options: {
+    title: {
+      display: true,
+      text: "World Wide Wine Production"
     }
-  });
+  }
+});*/

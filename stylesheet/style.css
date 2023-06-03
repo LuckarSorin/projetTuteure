@@ -354,11 +354,20 @@ div.fond_sombre {
 /** __________ Style visualisation __________ **/
 
 #menuvisu{
+    background-color: var(--fond_sombre);
+    color: var(--texte_sur_fond_sombre);
 
 }
 
 #visu{
     
+}
+
+#graphe {
+    background-color: var(--fond_sombre);
+    color: var(--texte_sur_fond_sombre);
+    width: 40%;
+
 }
 
 /** __________ Déclaration des Media Queries __________ **/

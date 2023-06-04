@@ -1,6 +1,6 @@
 <nav class="flex fond_sombre">
     <figure class="eho">
-        <a href="https://www.eho.esteam.mmi-velizy.fr">
+        <a href="./">
             <img src="assets/img/logo_left.svg" alt="eHo" title="eHo">
         </a>
     </figure>

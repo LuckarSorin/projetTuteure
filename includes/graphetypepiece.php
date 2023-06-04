@@ -3,8 +3,8 @@
 
         <div id="graphe">
             
-            <canvas id="RoomValuesChart" style="width:50%;max-width:600px"></canvas>
-            <!--canvas id="RoomPercentChart" style="width:100%;max-width:700px"></canvas-->
+            <canvas id="RoomValuesChart" style="width:50%;max-width:500px"></canvas>
+            <!--canvas id="RoomPercentChart" style="width:50%;max-width:500px"></canvas-->
         
         </div>
 

@@ -8,7 +8,6 @@
         <title>eHo - Votre maison</title>
         <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
         <link rel="icon" type="image/svg" href="assets/img/favicon.svg">
-        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>-->
     </head>
 
     <body>

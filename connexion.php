@@ -8,7 +8,6 @@
         <title>eHo - Connexion</title>
         <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
         <link rel="icon" type="image/svg" href="img/favicon.svg">
-        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>-->
     </head>
     <body class="fond_sombre">
         <a href="./"><h1 class="center"> eHo </h1></a>

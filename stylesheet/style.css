@@ -214,11 +214,8 @@ aside.menu details > * {
     margin: 0 1.5rem;
 }
 
-aside.menu details:hover {
+aside.menu p:hover {
     border-bottom-color: var(--accentuation);
-}
-
-aside.menu *:hover, aside.menu details summary:hover, aside.menu details p:hover { /* Ne marche pas : aside.menu details *:hover */
     color: var(--accentuation);
 }
 

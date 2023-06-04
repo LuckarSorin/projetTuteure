@@ -17,28 +17,10 @@
                     <img src="assets/img/logo_bottom.svg" alt="eHo" title="eHo">
                 </a>
             </figure>
-            <details>
-                <summary>Nouvelle simulation</summary>
-                <p><a href="https://www.eho.esteam.mmi-velizy.fr/jeu.php">Nouvelle simulation</a></p>
-            </details>
-            <details>
-                <summary>Mon compte</summary>
-                <p>[...]</p>
-                <p>[...]</p>
-                <p>[...]</p>
-            </details>
-            <details>
-                <summary>Mes sauvegardes</summary>
-                <p class="ajax_include 1">Consulter mes sauvegardes</p>
-                <p class="ajax_include 2">Gérer mes sauvegardes</p>
-                <p><a href="?page=3">Ajouter une sauvegarde</a></p>
-            </details>
-            <details>
-                <summary>Paramètres</summary>
-                <p>[...]</p>
-                <p>[...]</p>
-                <p>[...]</p>
-            </details>
+            <p><a href="https://www.eho.esteam.mmi-velizy.fr/jeu.php">Nouvelle simulation</a></p>
+            <p class="ajax_include 1">Mon compte</p>
+            <p class="ajax_include 2">Mes sauvegardes</p>
+            <p class="ajax_include 3">Paramètres</p>
         </aside>
         <main class="accueil">
         </main>

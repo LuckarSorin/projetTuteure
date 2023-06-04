@@ -196,10 +196,12 @@ aside.menu {
     min-width: 80px;
     justify-content: flex-start;
     flex-direction: column;
+    /*justify-content: center;*/
 }
 
 aside.menu figure.eho {
     height: 7rem;
+    width: 7rem;
     max-width: 80%;
     padding: 2rem 0;
 }
@@ -227,6 +229,7 @@ nav.accueil {
 
 nav figure.eho {
     height: 50px;
+    width: 50px;
 }
 
 nav figure.profil {
@@ -347,21 +350,48 @@ div.fond_sombre {
 
 /** __________ Style visualisation __________ **/
 
-#menuvisu{
+.menuvisu {
     background-color: var(--fond_sombre);
     color: var(--texte_sur_fond_sombre);
-
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+.menuvisu>button, .menuvisu>figure {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
 }
 
-#visu{
+.visu{
     
 }
 
-#graphe {
+.titrevisu{
     background-color: var(--fond_sombre);
     color: var(--texte_sur_fond_sombre);
+}
+
+div.graphe {
+    background-color: var(--fond_sombre);
+    color: var(--texte_sur_fond_sombre);
+    display: flex;
+    padding: 1px;
     width: 40%;
 
+}
+canvas.graphe {
+    
+}
+
+div.retour {
+    position: absolute;
+    bottom: 20px;
+    width: 20%;
+}
+button.retour {
+    width: 80%;
 }
 
 /** __________ Déclaration des Media Queries __________ **/

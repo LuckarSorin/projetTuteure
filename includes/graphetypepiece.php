@@ -1,10 +1,10 @@
 <html>
     <body>
 
-        <div id="graphe">
+        <div class="graphe">
             
-            <canvas id="RoomValuesChart" style="width:50%;max-width:500px"></canvas>
-            <!--canvas id="RoomPercentChart" style="width:50%;max-width:500px"></canvas-->
+            <canvas class="graphe" id="RoomValuesChart" style="width:50%;max-width:500px"></canvas>
+            <!--canvas class="graphe" id="RoomPercentChart" style="width:50%;max-width:500px"></canvas-->
         
         </div>
 

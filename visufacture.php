@@ -12,23 +12,39 @@
         <!--script src="assets/js/MyCharts.js"></script-->
         <script src="assets/js/visufacture.js"></script>
     </head>
-    <body>
+    <body class="flex">
 
         <aside class="fond_sombre flex menu">
-            <div id="menuvisu">
+            <div class="menuvisu">
 
-                <a href="./"><h2> eHo </h1></a>
-                <button onclick="changeInclude('source');"><a> Consommation par type de source </a></button>
-                <button onclick="changeInclude('piece');"><a> Consommation par type de pièce </a></button>
-                <button onclick="changeInclude('facture');"><a> Facture </a></button>
-                <button onclick="changeInclude('global');"><a> Vue globale </a></button>
+                <figure class="eho">
+                    <a href="./">
+                        <img src="assets/img/logo_bottom.svg" alt="eHo" title="eHo">
+                    </a>
+                </figure>
+                <button onclick="changeInclude('source');">
+                    <a> Consommation par type de source </a>
+                </button>
+                <button onclick="changeInclude('piece');">
+                    <a> Consommation par type de pièce </a>
+                </button>
+                <button onclick="changeInclude('facture');">
+                    <a> Facture </a>
+                </button>
+                <button onclick="changeInclude('global');">
+                    <a> Vue globale </a>
+                </button>
 
-                <button><a href="selectionpiece.php"> Retour à la configuration </a></button>
-
+                <div class="retour">
+                    <button class="retour">
+                        <a href="selectionpiece.php"> Retour à la configuration </a>
+                    </button>
+                </div>
+                
             </div>
         </aside>
 
-        <div class="visu accueil">
+        <main class="visu accueil">
 
             <h2 class="titrevisu"> Facture pour cette configuration </h2>
 
@@ -42,7 +58,7 @@
 
             </div>
 
-        </div>
+        </main>
 
     </body>
 </html>

@@ -204,14 +204,11 @@ aside.menu figure.eho {
     padding: 2rem 0;
 }
 
-aside.menu details {
+aside.menu p {
     width: 100%;
+    margin: 0 1.5rem;
     border-bottom: 1px solid var(--blanc);
     cursor: pointer;
-}
-
-aside.menu details > * {
-    margin: 0 1.5rem;
 }
 
 aside.menu p:hover {

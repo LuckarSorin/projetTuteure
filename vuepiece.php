@@ -7,12 +7,11 @@
         <meta name="viewport" content="width=device-width">
         <title>eHo - Ma pièce</title>
         <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
-        <link rel="stylesheet" type="text/css" href="stylesheet/styleMaison.css">
         <link rel="icon" type="image/svg" href="assets/img/favicon.svg">
         <script src="assets/js/selection.js"></script>
     </head>
 
-    <body>
+    <body style="display: flex;">
 
         <div id="menu sidebar">
             <h2>Équipements</h2>
@@ -28,10 +27,10 @@
                 </li>
 
             </ul>
-            <button onclick="toggleSidebar()">Rétracter</button>
+            <!--button onclick="toggleSidebar()">Rétracter</button-->
         </div>
 
-        <button><a> ← </a></button>
+        <!--button><a> ← </a></button-->
 
         <div class="fond_sombre">
 

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width">
     <title>Salon</title>
     <link rel="stylesheet" type="text/css" href="stylesheet/styleMaison.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
     <script src="assets/js/selection.js"></script>
 </head>
 <body>

@@ -121,7 +121,7 @@ img.width {
     text-align: center;
 }
 
-body.fond_sombre {
+.fond_sombre {
     background-color: var(--fond_sombre);
     color: var(--texte_sur_fond_sombre);
 }
@@ -195,9 +195,10 @@ aside.menu {
     height: 100%;
     width: 15%;
     min-width: 80px;
+    align-items: unset;
     justify-content: flex-start;
-    flex-direction: column;
     /*justify-content: center;*/
+    flex-direction: column;
 }
 
 aside.menu figure.eho {
@@ -395,15 +396,15 @@ div#content>h1 {
 
 /* --- Style maison --- */
 
-#maison{
+/*#maison{
 
-}
+}*/
 
 /* --- Style pièce --- */
 
-#piece{
+/*#piece{
 
-}
+}*/
 
 /* --- Style simulation --- */
 
@@ -442,17 +443,19 @@ main.visu{
     color: var(--texte_sur_fond_sombre);
 }
 
-div.graphe {
-    background-color: var(--fond_sombre);
+main.graphe {
+    background-color: var(--fond_clair);
     color: var(--texte_sur_fond_sombre);
+    height: 85%;
+}
+div.graphe {
     display: flex;
     padding: 1px;
-    width: 40%;
-
+    width: 50%;
 }
-canvas.graphe {
+/*canvas.graphe {
     
-}
+}*/
 
 div.retour {
     position: absolute;

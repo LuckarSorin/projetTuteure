@@ -4,12 +4,13 @@
     </head>
     <body>
 
-        <div class="graphe">
+        <!-- GRAPHIQUES ICI -->
 
-            <!-- GRAPHIQUE ICI -->
+        <?php include("graphetypesource.php"); ?>
 
-        </div>
+        <br /><br /><br />
+
+        <?php include("graphetypepiece.php"); ?>
 
     </body>
-    <script src="assets/js/MyCharts.js"></script>
 </html>

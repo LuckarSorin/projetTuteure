@@ -14,22 +14,46 @@
         <!--<script src="assets/js/visufacture.js"></script>-->
     </head>
     <body class="flex">
+
         <aside class="fond_sombre flex menu">
             <div class="menuvisu">
+
                 <figure class="eho">
                     <a href="./">
                         <img src="assets/img/logo_bottom.svg" alt="eHo" title="eHo">
                     </a>
                 </figure>
+
+                <p class="ajax_include global">Vue globale</p>
                 <p class="ajax_include source">Consommation par type de source</p>
                 <p class="ajax_include piece">Consommation par type de pièce</p>
                 <p class="ajax_include facture">Facture</p>
-                <p class="ajax_include global">Vue globale</p>
+
                 <div class="retour">
                     <p class="retour" href="selectionpiece.php"> Retour à la configuration </p>
                 </div>
+                
             </div>
         </aside>
-        <main class="accueil"></main>
+
+        <div class="visu accueil">
+            <nav class="flex fond_sombre accueil">
+
+                <figure class="profil vide"></figure>
+                <h3 class="center">Mes Statistiques</h3>
+
+                <figure class="profil">
+                    <a href="./accueil.php">
+                        <img src="assets/img/login.svg" alt="Mon profil" title="Mon profil">
+                    </a>
+                </figure>
+
+            </nav>
+
+        <main class="graphe">
+        </main>
+
+        </div>
+        
     </body>
 </html>

@@ -1,6 +1,6 @@
 /** Sélection des configurations en JQuery */
 $(document).ready(function() {
-    getInclude("facture");
+    getInclude("global");
     
     // Fonction qui appelle via AJAX le fichier ajax_visufacture_includes.php qui s'occupe de [...]
     function getInclude(number) {

@@ -208,9 +208,8 @@ aside.menu figure.eho {
 }
 
 aside.menu p {
-    width: 100%;
-    /*margin: 0 1.5rem;*/
-    padding-left: 2rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
     border-bottom: 1px solid var(--blanc);
     cursor: pointer;
 }
@@ -231,7 +230,7 @@ nav.accueil {
 
 nav figure.eho {
     height: 50px;
-    width: 50px;
+    width: 7rem;
 }
 
 nav figure.profil {
@@ -395,16 +394,10 @@ canvas.graphe {
     
 }
 
-aside.menu p.retour {
-    width: 80%;
-}
 div.retour {
     position: absolute;
     bottom: 20px;
     width: 15%;
-}
-button.retour {
-    width: 80%;
 }
 
 /** __________ Déclaration des Media Queries __________ **/

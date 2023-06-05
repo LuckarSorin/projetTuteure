@@ -23,8 +23,6 @@
             <p class="ajax_include sauvegarde">Mes sauvegardes</p>
             <p class="ajax_include parametre">Paramètres</p>
         </aside>
-
-        <main class="accueil">
-        </main>
+        <main class="accueil"></main>
     </body>
 </html>

@@ -8,42 +8,28 @@
         <title>eHo - Votre maison</title>
         <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
         <link rel="icon" type="image/svg" href="assets/img/favicon.svg">
+        <script src="assets/js/jquery.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
         <script src="assets/js/ajax_facture.js"></script>
-        <script src="assets/js/visufacture.js"></script>
+        <!--<script src="assets/js/visufacture.js"></script>-->
     </head>
     <body class="flex">
-
         <aside class="fond_sombre flex menu">
             <div class="menuvisu">
-
                 <figure class="eho">
                     <a href="./">
                         <img src="assets/img/logo_bottom.svg" alt="eHo" title="eHo">
                     </a>
                 </figure>
-
-                <p class="ajax_include source"> Consommation par type de source </p>
-                <p class="ajax_include piece"> Consommation par type de pièce </p>
-                <p class="ajax_include facture"> Facture </p>
-                <p class="ajax_include global"> Vue globale </p>
-
+                <p class="ajax_include source">Consommation par type de source</p>
+                <p class="ajax_include piece">Consommation par type de pièce</p>
+                <p class="ajax_include facture">Facture</p>
+                <p class="ajax_include global">Vue globale</p>
                 <div class="retour">
                     <p class="retour" href="selectionpiece.php"> Retour à la configuration </p>
                 </div>
-                
             </div>
         </aside>
-
-        <div class="visu accueil">
-
-            <h2 class="titrevisu"> Facture pour cette configuration </h2>
-
-        </div>
-        
-        <main>
-        </main>
-
-
+        <main class="accueil"></main>
     </body>
 </html>

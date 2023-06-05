@@ -10,7 +10,6 @@
             case "parametre":
                 $include = "includes/parametres.php";
                 break;
-            
             default:
                 $include = "includes/compte.php";
         }

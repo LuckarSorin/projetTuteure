@@ -1,6 +1,6 @@
 /** Sélection des configurations en JQuery */
 $(document).ready(function() {
-    getInclude(1);
+    getInclude("compte");
     
     // Fonction qui appelle via AJAX le fichier ajax_accueil_includes.php qui s'occupe de [...]
     function getInclude(number) {

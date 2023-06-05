@@ -22,7 +22,7 @@ var barColorsSource = ["#b91d47","#00aba9","#2b5797","#e8c3b9","#1e7145"];
 /* --- percent --- */
 
 new Chart("SourcePercentChart", {
-  type: "pie",
+  type: "doughnut",
   data: {
     labels: xValuesSource,
     datasets: [{

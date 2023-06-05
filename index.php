@@ -14,24 +14,26 @@
 
         <div class="accueil_centre">
             <div class="flex flex_colonne">
-                <a href="./"><h1 class="center"> eHo </h1></a>
                 <div class="flex bandeau_superieur">
-                    <img class="width" src="assets/img/logo_left.svg" alt="Logo de l'application eHo">
+                    <a href="./">
+                        <img class="width" src="assets/img/logo_left.svg" alt="Logo de l'application eHo">
+                    </a>
                 </div>
                 <div class="flex hover_decoration">
                     <hr>
-                    <h1 class="center"><a href="jeu.php"> SIMULEZ </a></h1>
+                    <h1 class="center"><a href="jeu.php"> SIMULE </a></h1>
                     <hr>
                 </div>
-                <div class="erreurlog">
                     <?php
                         if(isset($_GET['r'])){
                             if($_GET['r']==0){
-                                echo "Inscription réussie. Vous pouvez maintenant vous connecter.";
+                                echo "
+                                <div class='erreurlog'>
+                                    Inscription réussie. Tu peux maintenant te connecter.
+                                </div>";
                             }
                         }
                     ?>
-                </div>
                 <div>
                     <div class="flex hover_decoration">
                         <hr>

@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
         <link rel="icon" type="image/svg" href="assets/img/favicon.svg">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-        <!--script src="assets/js/MyCharts.js"></script-->
+        <script src="assets/js/ajax_facture.js"></script>
         <script src="assets/js/visufacture.js"></script>
     </head>
     <body class="flex">
@@ -22,43 +22,28 @@
                         <img src="assets/img/logo_bottom.svg" alt="eHo" title="eHo">
                     </a>
                 </figure>
-                <button onclick="changeInclude('source');">
-                    <a> Consommation par type de source </a>
-                </button>
-                <button onclick="changeInclude('piece');">
-                    <a> Consommation par type de pièce </a>
-                </button>
-                <button onclick="changeInclude('facture');">
-                    <a> Facture </a>
-                </button>
-                <button onclick="changeInclude('global');">
-                    <a> Vue globale </a>
-                </button>
+
+                <p class="ajax_include source"> Consommation par type de source </p>
+                <p class="ajax_include piece"> Consommation par type de pièce </p>
+                <p class="ajax_include facture"> Facture </p>
+                <p class="ajax_include global"> Vue globale </p>
 
                 <div class="retour">
-                    <button class="retour">
-                        <a href="selectionpiece.php"> Retour à la configuration </a>
-                    </button>
+                    <p class="retour" href="selectionpiece.php"> Retour à la configuration </p>
                 </div>
                 
             </div>
         </aside>
 
-        <main class="visu accueil">
+        <div class="visu accueil">
 
             <h2 class="titrevisu"> Facture pour cette configuration </h2>
 
-            <div>
-
-            <?php include("includes/graphetypepiece.php"); ?>
-
-            <br/>
-
-            <?php include("includes/graphetypesource.php"); ?>
-
-            </div>
-
+        </div>
+        
+        <main>
         </main>
+
 
     </body>
 </html>

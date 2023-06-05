@@ -108,6 +108,7 @@ img.height {
 
 img.width {
     width: 100%;
+    height: 12vh;
 }
 
 .flex {
@@ -208,7 +209,8 @@ aside.menu figure.eho {
 
 aside.menu p {
     width: 100%;
-    margin: 0 1.5rem;
+    /*margin: 0 1.5rem;*/
+    padding-left: 2rem;
     border-bottom: 1px solid var(--blanc);
     cursor: pointer;
 }
@@ -364,11 +366,19 @@ div.fond_sombre {
     width: 80%;
 }
 
-.visu{
-    
+div.visu {
+    text-align: center;
+    margin-left: 1px;
+    height: 100%;
+    width: 85%;
+}
+main.visu{
+    /*height: 100%;*/
+    width: 85%;
 }
 
 .titrevisu{
+    padding-left: 10px;
     background-color: var(--fond_sombre);
     color: var(--texte_sur_fond_sombre);
 }
@@ -385,6 +395,9 @@ canvas.graphe {
     
 }
 
+aside.menu p.retour {
+    width: 80%;
+}
 div.retour {
     position: absolute;
     bottom: 20px;

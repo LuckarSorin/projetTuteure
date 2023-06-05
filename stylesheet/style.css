@@ -330,8 +330,8 @@ div.selection .bouton {
 div.fond_sombre {
     background-color: var(--fond_sombre);
     color: var(--texte_sur_fond_sombre);
-    height: 95%;
-    width: 95%;
+    height: 100%;
+    width: 100%;
 }
 
 div#content>h1 {

@@ -13,16 +13,16 @@
 
     <body style="display: flex;">
 
-        <div id="menu sidebar">
+        <div id="sidebar">
             <h2>Pièces</h2>
             <div class="menu-item">
-                <a href="#" onclick="addRoom('Cuisine', 'vuepiece.php'); return false;">Cuisine</a>
+                <a href="#" onclick="addRoom('Cuisine', 'vuepiece.php', 'assets/img/pieces/cuisine-titre.png', 'Cuisine'); return false;">Cuisine</a>
             </div>
             <div class="menu-item">
-                <a href="#" onclick="addRoom('Salon', 'vuepiece.php'); return false;">Salon</a>
+                <a href="#" onclick="addRoom('Salon', 'vuepiece.php', 'assets/img/pieces/Salon-titre.png', 'Salon'); return false;">Salon</a>
             </div>
             <div class="menu-item">
-                <a href="#" onclick="addRoom('Chambre', 'vuepiece.php'); return false;">Chambre</a>
+                <a href="#" onclick="addRoom('Chambre', 'vuepiece.php', 'assets/img/pieces/chambre-titre.png', 'Chambre'); return false;">Chambre</a>
             </div>
             <!-- Ajoutez d'autres pièces ici avec leurs liens -->
             <!--button onclick="toggleSidebar()">Rétracter</button-->

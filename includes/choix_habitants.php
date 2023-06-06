@@ -6,7 +6,7 @@
         $get_habitat = "1";
     }
 ?>
-<main class="accueil">
+<main class="jeu">
     <h2 class="center">Sélectionne le nombre d'habitants du foyer</h2>
     <section>
         <div class="selection">

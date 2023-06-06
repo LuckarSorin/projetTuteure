@@ -23,7 +23,7 @@ function removeRoom(room) {
     container.removeChild(room);
 }
 
-function addEquipment(equipment) {
+function addEquipment(equipment, imagePath, altText) {
     var appareilPath = "assets/img/appareils/";
     var container = document.getElementById("room-container");
     var room = document.createElement("div");

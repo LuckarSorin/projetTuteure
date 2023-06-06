@@ -1,5 +1,5 @@
 <?php
-/* script de deconnection*/
+    /* script de deconnection*/
 
     if(session_status() != PHP_SESSION_ACTIVE){
         session_start();

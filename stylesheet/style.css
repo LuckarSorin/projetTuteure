@@ -307,6 +307,10 @@ div.selection .images figure {
     cursor: pointer;
 }
 
+div.selection .images figure:hover {
+    background-color: var(--fond_moyen);
+}
+
 div.selection .images figure img {
     height: 200px;
     width: 200px;
@@ -490,6 +494,9 @@ div.retour {
 }
 
 @media screen and (max-width: 40rem) {
+    main.jeu {
+        transform: none;
+    }
     nav.accueil {
         flex-direction: column-reverse;
         padding: 1.5rem 1rem;

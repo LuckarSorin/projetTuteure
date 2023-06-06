@@ -3,11 +3,11 @@ function toggleSidebar() {
     sidebar.classList.toggle("collapsed");
 }
 
-function addRoom(room, url, imagePath, altText) {
+function addRoom(room, imagePath, altText) {
     var container = document.getElementById("room-container");
     var newRoom = document.createElement("a");
     newRoom.className = "room";
-    newRoom.href = url;
+    newRoom.href = 'vuepiece.php?room='+room;
     newRoom.innerHTML = '<img src="' + imagePath + '" alt="' + altText + '"><button class="delete-button">Moins</button>';
     container.appendChild(newRoom);
 

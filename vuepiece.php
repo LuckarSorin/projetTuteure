@@ -16,6 +16,9 @@
                 $piece = "Ma ".$piece;
         }
     }
+    else {
+        $piece = "Ma pièce";
+    }
 ?>
 <html>
     <head>

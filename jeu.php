@@ -31,7 +31,7 @@
                             include("./includes/choix_habitants.php");
                         }
                         else {
-                            include("vuemaison.php");
+                            include("vuemaison.php");/* déplacer dans includes/ ? */
                         }
                     }
                     else {

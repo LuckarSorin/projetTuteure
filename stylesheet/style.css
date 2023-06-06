@@ -400,6 +400,15 @@ div#content>h1 {
 
 }*/
 
+div.visualisation {
+    position: absolute;
+    width: 80%;
+    bottom: 20px;
+}
+button.visualisation {
+    width: 20%;
+}
+
 /* --- Style pièce --- */
 
 /*#piece{

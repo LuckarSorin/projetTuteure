@@ -378,7 +378,7 @@ div#content>h1 {
 
 .room {
     position: relative;
-    width: 200px;
+    width: 250px;
     height: 200px;
     border: 1px solid #000;
     display: flex;
@@ -409,12 +409,12 @@ button.visualisation {
 }
 
 a.imagepiece {
-    
     height: 100%;
 }
 img.imagepiece {
-    height: 50%;
+    height: 60%;
     position: absolute;
+    left: 0;
     bottom: 0;
 }
 

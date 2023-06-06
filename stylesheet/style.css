@@ -381,7 +381,6 @@ div#content>h1 {
     width: 200px;
     height: 200px;
     border: 1px solid #000;
-    margin: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -407,6 +406,16 @@ div.visualisation {
 }
 button.visualisation {
     width: 20%;
+}
+
+a.imagepiece {
+    
+    height: 100%;
+}
+img.imagepiece {
+    height: 50%;
+    position: absolute;
+    bottom: 0;
 }
 
 /* --- Style pièce --- */

@@ -5,10 +5,9 @@ function toggleSidebar() {
 
 function addRoom(room, imagePath, altText) {
     var container = document.getElementById("room-container");
-    var newRoom = document.createElement("a");
+    var newRoom = document.createElement("div");
     newRoom.className = "room";
-    newRoom.href = 'vuepiece.php?room='+room;
-    newRoom.innerHTML = '<img src="' + imagePath + '" alt="' + altText + '"><button class="delete-button">Moins</button>';
+    newRoom.innerHTML = '<a class="imagepiece" href="vuepiece.php?room='+ room +'"><img class="imagepiece" src="' + imagePath + '" alt="' + altText + '"></a><button class="delete-button">Moins</button>';
     container.appendChild(newRoom);
 
     var deleteButton = newRoom.querySelector(".delete-button");
@@ -17,14 +16,6 @@ function addRoom(room, imagePath, altText) {
         removeRoom(newRoom);
     });
 }
-
-
-// Appel de la fonction addRoom avec les images pour chaque pièce
-addRoom('Cuisine', 'vuepiece.php', 'chemin/vers/une/image-cuisine.png', 'Cuisine');
-addRoom('Salon', 'vuepiece.php', 'chemin/vers/une/image-salon.png', 'Salon');
-
-
-
 
 function removeRoom(room) {
     var container = document.getElementById("room-container");

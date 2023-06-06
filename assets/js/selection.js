@@ -4,10 +4,11 @@ function toggleSidebar() {
 }
 
 function addRoom(room, imagePath, altText, href) {
+    var piecePath = "assets/img/pieces/";
     var container = document.getElementById("room-container");
     var newRoom = document.createElement("div");
     newRoom.className = "room";
-    newRoom.innerHTML = '<a class="imagepiece" href="'+ href +'"><img class="imagepiece" src="' + imagePath + '" alt="' + altText + '"></a><button class="delete-button">Moins</button>';
+    newRoom.innerHTML = '<a class="imagepiece" href="'+ href +'"><img class="imagepiece" src="' + piecePath + imagePath + '" alt="' + altText + '"></a><button class="delete-button">Moins</button>';
     container.appendChild(newRoom);
 
     var deleteButton = newRoom.querySelector(".delete-button");
@@ -23,6 +24,7 @@ function removeRoom(room) {
 }
 
 function addEquipment(equipment) {
+    var appareilPath = "assets/img/appareils/";
     var container = document.getElementById("room-container");
     var room = document.createElement("div");
     room.className = "room";

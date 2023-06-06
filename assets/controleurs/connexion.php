@@ -18,7 +18,7 @@ if (isset($_POST['nom']) && isset($_POST['mot_de_passe'])) {
         if (password_verify($mot_de_passe, $mot_de_passe_hash)) {
             $_SESSION['id'] = $row['id_Utilisateur'];
             $_SESSION['nom'] = $nom;
-            header("Location: ./../accueil.php");
+            header("Location: ../../accueil.php");
             echo "Bon mot de passe"; //jamais affiché camarade !
         } else {
             header("Location: ../../connexion.php?r=1");

@@ -17,7 +17,7 @@ if (isset($_POST['nom']) && isset($_POST['email']) && isset($_POST['mot_de_passe
     $mot_de_passe_hash = password_hash($mot_de_passe, PASSWORD_DEFAULT);
 
     // Insérer l'utilisateur dans la base de données
-    $sql = "INSERT INTO utilisateurs (nomUtilisateur, email, motDePasse) VALUES (:nom, :email, :mot_de_passe)";
+    $sql = "INSERT INTO Utilisateur (nomUtilisateur, email, motDePasse) VALUES (:nom, :email, :mot_de_passe)";
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':nom', $nom);
     $stmt->bindParam(':email', $email);

@@ -1,8 +1,8 @@
 <?php
-define('SERVER','');
-define('USER','');
-define('PASSWD');
-define('DB','');
+define('SERVER','localhost');
+define('USER','eho_Admin');
+define('PASSWD','(;b7MBsv?9rr');
+define('DB','eho_Save');
 
 try {
     $conn = new PDO("mysql:host=".SERVER.";dbname=".DB,USER,PASSWD);

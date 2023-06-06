@@ -9,7 +9,7 @@
                 </a>
             </figure>
         </nav>
-        <section class="configurations">
+        <section class="sauvegardes">
             <div>
                 <p>Configuration 1 : Ma maison</p>
                 <p><span>19/01/2023 20h38</span></p>

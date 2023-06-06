@@ -243,12 +243,20 @@ nav figure.profil:hover {
     filter: brightness(0) invert(1);
 }
 
-section.configurations > div {
+/** __________ compte, sauvegardes et parametres __________ **/
+
+/* --- compte --- */
+
+/* background-color: var(--fond_clair); */
+
+/* --- sauvegarde --- */
+
+section.sauvegardes > div {
     padding: 1px 1rem;
     cursor: pointer;
 }
 
-section.configurations > div:hover {
+section.sauvegardes > div:hover {
     padding-top: 0;
     padding-bottom: 0;
     border: 1px var(--accentuation);
@@ -256,15 +264,15 @@ section.configurations > div:hover {
     color: var(--accentuation);
 }
 
-section.configurations > div:nth-child(odd) {
+section.sauvegardes > div:nth-child(odd) {
     background: var(--fond_moyen);
 }
 
-section.configurations > div:nth-child(even) {
+section.sauvegardes > div:nth-child(even) {
     background: var(--fond_clair);
 }
 
-
+/* --- parametres --- */
 
 /** __________ Style du jeu __________ **/
 

@@ -59,8 +59,20 @@ $(document).ready(function() {
     $(document).on("input change", "div.selection .curseur input", function() {
         $("div.selection .images figure").removeClass("selected");
         var idhabitat = $("div.selection .curseur input").val();
-        $("div.selection .bouton a").attr("href", "?habitat=" + idhabitat);
+        $("div.selection .bouton a").attr("href", "?habitants=" + idhabitat);
         $("div.selection .images figure").eq(idhabitat - 1).addClass("selected");
     });
+
+    // En fonction de l'image cliquée
+    $("div.selection .images figure").click(function(){
+            $("div.selection .images figure").removeClass("selected");
+            $(this).addClass("selected");
+            for (i = 0; i < 10; i++) {
+                if ($("div.selection .images figure").eq(i).hasClass("selected")) {
+                    $("div.selection .curseur input").val(i);
+                    $("div.selection .bouton a").attr("href", "?habitat=" + i);
+                }
+            }
+        });
 });
 </script>

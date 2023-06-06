@@ -30,7 +30,7 @@
     <body style="display: flex;">
 
         <div id="sidebar">
-            <a href="vuemaison.php"><button>Retour à votre maison</button></a>
+            <a href="vuemaison.php"><button>Retour à ma maison</button></a>
             <h2>Équipements</h2>
             
             <div class="menu-item">

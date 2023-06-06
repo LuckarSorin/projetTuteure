@@ -14,7 +14,7 @@
                 $include = "includes/global.php";
                 break;
             default:
-                $include = "includes/facture.php";
+                $include = "includes/global.php";
         }
     }
     else {

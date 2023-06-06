@@ -10,8 +10,7 @@
         <link rel="icon" type="image/svg" href="assets/img/favicon.svg">
         <script src="assets/js/jquery.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-        <script src="assets/js/ajax_facture.js"></script>
-        <!--<script src="assets/js/visufacture.js"></script>-->
+        <script src="./assets/js/ajax_facture.js"></script>
     </head>
     <body class="flex">
 

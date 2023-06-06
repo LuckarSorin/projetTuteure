@@ -31,7 +31,7 @@
                             include("./includes/choix_habitants.php");
                         }
                         else {
-                            include("./includes/le_jeu_la.php");
+                            include("includes/vuemaison.php");
                         }
                     }
                     else {

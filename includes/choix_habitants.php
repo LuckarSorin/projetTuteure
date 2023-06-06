@@ -1,4 +1,11 @@
-<?php if isset($_GET["habitat"]) { $get_habitat = $_GET["habitat"]; } else { $get_habitat = "1" } ?>
+<?php
+    if(isset($_GET["habitat"])){
+        $get_habitat = $_GET["habitat"];
+    }
+    else{
+        $get_habitat = "1";
+    }
+?>
 <h2 class="center">Sélectionne le nombre d'habitants du foyer</h2>
 <section>
     <div class="selection">

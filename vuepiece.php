@@ -2,16 +2,13 @@
     /*check si connecté*/
     if (isset($_GET['room'])) {
         $piece = $_GET['room'];
-        switch ($_GET["room"]) {
-            case "Cuisine" || "Salle de bain" || "Buandrie" || "Chambre":
-                $piece = "Ma ".$piece;
-                break;
-            case "Salon":
-                $piece = "Mon ".$piece;
-                break;
-            default:
-                $piece = "Ma ".$piece;
-        }
+        if ($piece == "Cuisine" || $piece == "Salle de bain" || $piece == "Buandrie" || $piece == "Chambre" ){
+            $piece = "Ma ".$piece;
+        }elseif($piece == "Salon"){
+            $piece = "Mon ".$piece;
+        }else{
+            $piece = "Ma ".$piece;
+        }/*strcmp($piece,"Salon") == 0 */
     }
     else {
         $piece = "Ma pièce";

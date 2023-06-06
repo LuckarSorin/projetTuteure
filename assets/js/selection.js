@@ -28,7 +28,7 @@ function addEquipment(equipment, imagePath, altText) {
     var container = document.getElementById("room-container");
     var room = document.createElement("div");
     room.className = "room";
-    room.innerHTML = '<a class="imageappareil"><img class="imageappareil" src="' + appareilPath + imagePath + '" alt="' + altText + '"></a><button class="delete-button">Moins</button>';
+    room.innerHTML = '<img class="imageappareil" src="' + appareilPath + imagePath + '" alt="' + altText + '"><button class="delete-button">Moins</button>';
     container.appendChild(room);
 
     var deleteButton = room.querySelector(".delete-button");

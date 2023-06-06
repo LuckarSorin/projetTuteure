@@ -4,7 +4,7 @@
             <img src="assets/img/logo_left.svg" alt="eHo" title="eHo">
         </a>
     </figure>
-    <h3 class="center">eho - Le jeu</h3>
+    <h3 class="center">Mon foyer</h3>
     <figure class="profil">
         <a href="./inscription.php">
             <img src="assets/img/login.svg" alt="S'inscrire" title="S'inscrire">

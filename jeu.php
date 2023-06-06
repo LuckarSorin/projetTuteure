@@ -22,7 +22,30 @@
         ?>
         <main class="jeu">
             <?php
-                include("./includes/choix_habitation.php");
+                if (isset($_GET["habitat"])) {
+                    if (isset($_GET["habitants"])) {
+                        if (($_GET["habitat"] != 1) && ($_GET["habitat"] != 3)) {
+                            include("./includes/choix_habitation.php");
+                        }
+                        else if (($_GET["habitants"] < 1) && ($_GET["habitants"] > 30)) {
+                            include("./includes/choix_habitants.php");
+                        }
+                        else {
+                            include("./includes/le_jeu_la.php");
+                        }
+                    }
+                    else {
+                        if (($_GET["habitat"] != 1) && ($_GET["habitat"] != 3)) {
+                            include("./includes/choix_habitation.php");
+                        }
+                        else {
+                            include("./includes/le_jeu_la.php");
+                        }
+                    }
+                }
+                else {
+                    include("./includes/le_jeu_la.php");
+                }
                 
                 // TODO => Vérifier que habitat vaut bien soit 1 soit 3
             ?>

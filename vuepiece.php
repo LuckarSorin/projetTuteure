@@ -29,7 +29,7 @@
 
         <div id="sidebar">
             <a href="vuemaison.php"><button>Retour à ma maison</button></a>
-            <h2>Équipements</h2>
+            <h2>Appareils</h2>
             
             <div class="menu-item">
                 <a href="#" onclick="addEquipment('Ballon deau chaude', 'Ballon deau chaude.png', 'Ballon deau chaude'); return false;">Ballon d'eau chaude</a>

@@ -13,6 +13,7 @@
 ?>
 <div class="flex menu">
     <aside class="fond_sombre flex menu">
+        <h2>Pièces</h2>
         
         <p onclick="addRoom('Cuisine', 'cuisine-titre.png', 'Cuisine', '?habitat=<?php echo $get_habitat ?>&habitants=<?php echo $get_habitants ?>&piece=1'); return false;">Cuisine</p>
         <p onclick="addRoom('Salon', 'Salon-titre.png', 'Salon', '?habitat=<?php echo $get_habitat ?>&habitants=<?php echo $get_habitants ?>&piece=2'); return false;">Salon</p>

@@ -1,3 +1,4 @@
+<?php if isset($_GET["habitat"]) { $get_habitat = $_GET["habitat"]; } else { $get_habitat = "1" } ?>
 <h2 class="center">Sélectionne le nombre d'habitants du foyer</h2>
 <section>
     <div class="selection">
@@ -36,7 +37,7 @@
         <div class="bouton">
             <div class="flex hover_decoration">
                 <hr>
-                <p class="center"><a href="&habitants=5">Suivant</a></p>
+                <p class="center"><a href="?habitat=<?php echo $get_habitat ?>&habitants=5">Suivant</a></p>
                 <hr>
             </div>
         </div>
@@ -59,7 +60,7 @@ $(document).ready(function() {
     $(document).on("input change", "div.selection .curseur input", function() {
         $("div.selection .images figure").removeClass("selected");
         var nbhabitants = $("div.selection .curseur input").val();
-        $("div.selection .bouton a").attr("href", "&habitants=" + nbhabitants);
+        $("div.selection .bouton a").attr("href", "?habitat=<?php echo $get_habitat ?>&habitants=" + nbhabitants);
         $("div.selection .images figure").eq(nbhabitants-1).addClass("selected");
     });
 
@@ -70,7 +71,7 @@ $(document).ready(function() {
             for (i = 1; i < 10; i++) {
                 if ($("div.selection .images figure").eq(i-1).hasClass("selected")) {
                     $("div.selection .curseur input").val(i);
-                    $("div.selection .bouton a").attr("href", "&habitants=" + i);
+                    $("div.selection .bouton a").attr("href", "?habitat=<?php echo $get_habitat ?>&habitants=" + i);
                 }
             }
         });

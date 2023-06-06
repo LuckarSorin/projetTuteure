@@ -21,7 +21,7 @@
                 </div>
                 <div class="flex hover_decoration">
                     <hr>
-                    <h1 class="center"><a href="jeu.php"> SIMULE </a></h1>
+                    <h1 class="center"><a href="accueil.php"> SIMULE </a></h1>
                     <hr>
                 </div>
                     <?php

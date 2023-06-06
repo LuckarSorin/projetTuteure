@@ -24,6 +24,12 @@
                 <a href="#" onclick="addRoom('Salon', 'assets/img/pieces/Salon-titre.png', 'Salon'); return false;">Salon</a>
             </div>
             <div class="menu-item">
+                <a href="#" onclick="addRoom('Salle de bain', 'assets/img/pieces/Salle_de_bain-titre.png', 'Salle de bain'); return false;">Salle de bain</a>
+            </div>
+            <div class="menu-item">
+                <a href="#" onclick="addRoom('Buandrie', 'assets/img/pieces/Buandrie-titre.png', 'Buandrie'); return false;">Buandrie</a>
+            </div>
+            <div class="menu-item">
                 <a href="#" onclick="addRoom('Chambre', 'assets/img/pieces/chambre-titre.png', 'Chambre'); return false;">Chambre</a>
             </div>
 

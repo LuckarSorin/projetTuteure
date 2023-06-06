@@ -343,7 +343,7 @@ div#content>h1 {
 }
 
 #sidebar {
-    width: 200px;
+    width: 24%;
     background-color: #f0f0f0;
     padding: 20px;
     transition: width 0.3s ease;
@@ -405,7 +405,7 @@ div#content>h1 {
 
 div.visualisation {
     position: absolute;
-    width: 80%;
+    width: 75%;
     bottom: 20px;
 }
 button.visualisation {
@@ -452,7 +452,7 @@ div.visu {
     text-align: center;
     margin-left: 1px;
     height: 100%;
-    width: 85%;
+    width: 89%;
 }
 main.visu{
     /*height: 100%;*/
@@ -468,7 +468,7 @@ main.visu{
 main.graphe {
     background-color: var(--fond_clair);
     color: var(--texte_sur_fond_sombre);
-    height: 85%;
+    height: 89%;
 }
 div.graphe {
     display: flex;

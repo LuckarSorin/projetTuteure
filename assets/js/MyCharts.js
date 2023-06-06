@@ -1,6 +1,6 @@
 /** _____ par source _____ **/
 
-var xValuesSource = ["chauffage", "éléctroménagers", "Chauffe-eau", "appareils éléctronique", "prises éléctriques"];
+var xValuesSource = ["Chauffage", "Éléctroménagers", "Chauffe-eau", "Appareils éléctronique", "Prises éléctriques"];
 var yValuesSource = [55, 49, 44, 24, 15];
 var barColorsSource = ["#b91d47","#00aba9","#2b5797","#e8c3b9","#1e7145"];
 
@@ -42,7 +42,7 @@ new Chart("SourcePercentChart", {
 
 /** _____ par pièces _____ */
 
-var xValuesRoom = ["Cuisine", "Salon", "Salle de bain", "buandrie", "chambres", ""];
+var xValuesRoom = ["Cuisine", "Salon", "Salle de bain", "Buandrie", "Chambres", ""];
 var yValuesRoom = [55, 49, 44, 24, 20, 0];
 var barColorsRoom = ["red", "green","blue","orange","brown", "white"];
 

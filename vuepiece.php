@@ -32,23 +32,20 @@
 
     <body style="display: flex;">
 
-        <div id="menu sidebar">
+        <div id="sidebar">
             <a href="vuemaison.php"><button>Retour à votre maison</button></a>
             <h2>Équipements</h2>
-
-            <ul>
-                <li>
-                    <button onclick="addEquipment('Télévision')">Télévision</button>
-                </li>
-                <li>
-                    <button onclick="addEquipment('Lumière')">Lumière</button>
-                </li>
-                <li>
-                    <button onclick="addEquipment('Lampe')">Lampe</button>
-                </li>
-
-            </ul>
             
+            <div class="menu-item">
+                <a href="#" onclick="addEquipment('Télévision')">Télévision</a>
+            </div>
+            <div class="menu-item">
+                <a href="#" onclick="addEquipment('Lumière')">Lumière</a>
+            </div>
+            <div class="menu-item">
+                <a href="#" onclick="addEquipment('Lampe')">Lampe</a>
+            </div>
+
             <!--button onclick="toggleSidebar()">Rétracter</button-->
         </div>
 

@@ -39,14 +39,14 @@
                 <br />
 
                 <?php 
-                    if(true/*$connected*/){
+                    if($connected){
                         echo "
                             <ul>
                                 <li>
-                                    <p class='compteTexte'>"/*. $nom*/ ."nom(pseudo)</p>
+                                    <p class='compteTexte'>". $nom ."nom(pseudo)</p>
                                 </li>
                                 <li>
-                                    <p class='compteTexte'>"/*. $email*/ ."email@mail.fr</p>
+                                    <p class='compteTexte'>". $email ."email@mail.fr</p>
                                 </li>
                                 <li>
                                     <p class='compteButton'><button>Changer de mot de passe</button></p>

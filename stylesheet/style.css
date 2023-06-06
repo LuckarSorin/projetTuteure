@@ -487,6 +487,12 @@ div.retour {
 
 /** __________ Déclaration des Media Queries __________ **/
 
+@media screen and (max-width: 1920px) and (max-height: 1080px) {
+    main.jeu {
+        transform: none;
+    }
+}
+
 @media screen and (max-width: 64rem) {
     figure.vide {
         display: none;
@@ -494,9 +500,6 @@ div.retour {
 }
 
 @media screen and (max-width: 40rem) {
-    main.jeu {
-        transform: none;
-    }
     nav.accueil {
         flex-direction: column-reverse;
         padding: 1.5rem 1rem;

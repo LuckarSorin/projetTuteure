@@ -1,18 +1,19 @@
 <?php
-    /*check si connecté*/
-    if (isset($_GET['room'])) {
+    if(isset($_GET['room'])){
         $piece = $_GET['room'];
-        if ($piece == "Cuisine" || $piece == "Salle de bain" || $piece == "Buandrie" || $piece == "Chambre" ){
+        if($piece == "Cuisine" || $piece == "Salle de bain" || $piece == "Buandrie" || $piece == "Chambre" ){
             $piece = "Ma ".$piece;
         }elseif($piece == "Salon"){
             $piece = "Mon ".$piece;
         }else{
             $piece = "Ma ".$piece;
-        }/*strcmp($piece,"Salon") == 0 */
-    }
-    else {
+        }
+    }else{
         $piece = "Ma pièce";
     }
+    /** la comparaison fonctionne aussi avec :
+     *  strcmp($piece,"Salon") == 0 
+     *  0 si égal et -1 ou 1 si different */
 ?>
 <html>
     <head>

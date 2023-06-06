@@ -1,6 +1,3 @@
-<?php
-    /*check si connecté*/
-?>
 <html>
     <head>
         <meta charset="utf-8">
@@ -33,7 +30,6 @@
                 <a href="#" onclick="addRoom('Chambre', 'chambre-titre.png', 'Chambre'); return false;">Chambre</a>
             </div>
 
-            <!-- Ajoutez d'autres pièces ici avec leurs liens -->
             <!--button onclick="toggleSidebar()">Rétracter</button-->
         </div>
 

@@ -1,4 +1,4 @@
-<h2 class="center">Pour commencer, sélectionnez votre habitation</h2>
+<h2 class="center">Pour commencer, sélectionne ton habitation</h2>
 <section>
     <div class="selection">
         <div class="flex images">

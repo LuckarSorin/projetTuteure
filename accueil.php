@@ -1,5 +1,5 @@
 <?php
-    //TODO
+    //TODO verifier si connecté
 ?>
 <html>
     <head>
@@ -11,6 +11,7 @@
         <script src="assets/js/jquery.js"></script>
         <script src="assets/js/ajax_accueil.js"></script>
     </head>
+
     <body class="fond_sombre flex">
         <aside class="fond_sombre flex menu">
             <figure class="eho">
@@ -18,11 +19,19 @@
                     <img src="assets/img/logo_bottom.svg" alt="eHo" title="eHo">
                 </a>
             </figure>
+
             <p><a href="jeu.php">Nouvelle simulation</a></p>
             <p class="ajax_include compte">Mon compte</p>
             <p class="ajax_include sauvegarde">Mes sauvegardes</p>
             <p class="ajax_include parametre">Paramètres</p>
+            
+            <div class="retour">
+                <p class="retour"><a href="./assets/controleurs/deconnexion.php">Me deconnecter</a></p>
+            </div>
         </aside>
-        <main class="accueil"></main>
+
+        <main class="accueil">
+
+        </main>
     </body>
 </html>

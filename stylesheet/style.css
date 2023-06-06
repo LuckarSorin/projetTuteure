@@ -247,7 +247,21 @@ nav figure.profil:hover {
 
 /* --- compte --- */
 
-/* background-color: var(--fond_clair); */
+.gestioncompte {
+    background-color: var(--fond_clair);
+    height: 89%;
+}
+
+.compteTexte {
+
+}
+.compteButton {
+
+}
+
+.noAccount {
+    margin-left: 5%;
+}
 
 /* --- sauvegarde --- */
 
@@ -273,6 +287,14 @@ section.sauvegardes > div:nth-child(even) {
 }
 
 /* --- parametres --- */
+
+.parametrage{
+    background-color: var(--fond_clair);
+    height: 89%;
+}
+dl {
+    margin-left: 5%;
+}
 
 /** __________ Style du jeu __________ **/
 
@@ -411,9 +433,9 @@ div#content>h1 {
 
 /* --- Style maison --- */
 
-/*#maison{
+.maison{
 
-}*/
+}
 
 div.visualisation {
     position: absolute;
@@ -439,9 +461,9 @@ img.imagepiece {
 
 /* --- Style pièce --- */
 
-/*#piece{
+.piece{
 
-}*/
+}
 
 img.imageappareil {
     /*height: 40%;*/
@@ -501,9 +523,9 @@ div.graphe {
     padding: 1px;
     width: 50%;
 }
-/*canvas.graphe {
+canvas.graphe {
     
-}*/
+}
 
 div.retour {
     position: absolute;

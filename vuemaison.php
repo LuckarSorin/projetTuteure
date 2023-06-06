@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>eHo - Mon habotation</title>
+        <title>eHo - Mon habitation</title>
         <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
         <link rel="icon" type="image/svg" href="assets/img/favicon.svg">
         <script src="assets/js/selection.js"></script>
@@ -15,7 +15,7 @@
             <h2>Pièces</h2>
 
             <div class="menu-item">
-                <a href="#" onclick="addRoom('Cuisine', 'cuisine-titre.png', 'Cuisine'); return false;">Cuisine</a>
+                <a href="#" onclick="addRoom('Cuisine', 'Cuisine-titre.png', 'Cuisine'); return false;">Cuisine</a>
             </div>
             <div class="menu-item">
                 <a href="#" onclick="addRoom('Salon', 'Salon-titre.png', 'Salon'); return false;">Salon</a>
@@ -27,7 +27,7 @@
                 <a href="#" onclick="addRoom('Buandrie', 'Buandrie-titre.png', 'Buandrie'); return false;">Buandrie</a>
             </div>
             <div class="menu-item">
-                <a href="#" onclick="addRoom('Chambre', 'chambre-titre.png', 'Chambre'); return false;">Chambre</a>
+                <a href="#" onclick="addRoom('Chambre', 'Chambre-titre.png', 'Chambre'); return false;">Chambre</a>
             </div>
 
             <!--button onclick="toggleSidebar()">Rétracter</button-->

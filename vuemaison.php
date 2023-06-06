@@ -45,7 +45,9 @@
             </div>
 
             <div class="visualisation">
-                <button class="visualisation" href="visufacture.php"> Simuler </button>
+                <a href="visufacture.php">
+                    <button class="visualisation"> Simuler </button>
+                </a>
             </div>
 
         </div>

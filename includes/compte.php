@@ -1,7 +1,7 @@
 <?php
-    $connected = 0;
+    $connected = false;
     session_start();
-    /*require_once '../assets/controleurs/config.php';*/
+    require_once '../assets/controleurs/config.php';
     if (isset($_SESSION['id'])) {
         $id = $_SESSION['id'];
     
@@ -10,13 +10,10 @@
         $stmt->bindParam(':id', $id);
         $stmt->execute();
 
-        $_SESSION['nomUtilisateur'] = $row['nomUtilisateur'];
-        $_SESSION['email'] = $row['email'];
+        $nom = $row['nomUtilisateur'];
+        $email = $row['email'];
 
-        $nom = $_SESSION['nomUtilisateur'];
-        $email = $_SESSION['email'];
-
-        $connected = 1;
+        $connected = true;
     }
 ?>
 <html>
@@ -39,7 +36,7 @@
                 <br />
 
                 <?php 
-                    if($connected){
+                    if($connected == true){
                         echo "
                             <ul>
                                 <li>

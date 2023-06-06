@@ -14,6 +14,8 @@
 
         <div class="accueil_centre">
             <div class="flex flex_colonne">
+                <a class="Info" href="https://esteam.mmi-velizy.fr/"><button class="Info">I</button></a>
+
                 <div class="flex bandeau_superieur">
                     <a href="./">
                         <img class="width" src="assets/img/logo_left.svg" alt="Logo de l'application eHo">

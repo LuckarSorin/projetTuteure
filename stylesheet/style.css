@@ -142,6 +142,16 @@ img.width {
 
 /* --- Style de la page index.php --- */
 
+a.Info {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+button.Info {
+    width: 2rem;
+    height: 2rem;
+}
+
 div.accueil_centre {
     height: 100%;
     width: 80%;

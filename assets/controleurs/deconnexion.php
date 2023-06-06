@@ -4,10 +4,10 @@
     if(session_status() != PHP_SESSION_ACTIVE){
         session_start();
     }
-    if (isset($_SESSION["connected"])){
+    if (isset($_SESSION["id"])){
+        $_SESSION['id']= NULL;
+        unset($_SESSION['id']);
         session_destroy();
-        unset($_SESSION['connected']);
-        $_SESSION['connected']= NULL;
     }
     header('Location: ../../index.php');
 

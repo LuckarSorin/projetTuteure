@@ -60,15 +60,15 @@ $(document).ready(function() {
         $("div.selection .images figure").removeClass("selected");
         var idhabitat = $("div.selection .curseur input").val();
         $("div.selection .bouton a").attr("href", "?habitants=" + idhabitat);
-        $("div.selection .images figure").eq(idhabitat - 1).addClass("selected");
+        $("div.selection .images figure").eq(idhabitat-1).addClass("selected");
     });
 
     // En fonction de l'image cliquée
     $("div.selection .images figure").click(function(){
             $("div.selection .images figure").removeClass("selected");
             $(this).addClass("selected");
-            for (i = 0; i < 10; i++) {
-                if ($("div.selection .images figure").eq(i).hasClass("selected")) {
+            for (i = 1; i < 10; i++) {
+                if ($("div.selection .images figure").eq(i-1).hasClass("selected")) {
                     $("div.selection .curseur input").val(i);
                     $("div.selection .bouton a").attr("href", "?habitat=" + i);
                 }

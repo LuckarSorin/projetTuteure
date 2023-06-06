@@ -25,7 +25,7 @@
         <p onclick="addEquipment('Lumière')">Lumière</p>
         <p onclick="addEquipment('Lampe')">Lampe</p>
         <div class="retour">
-            <p class="retour"><a href="visufacture.php">Visualiser</a></p>
+            <p class="retour"><a href="javascript:history.back()">Retour à mes pièces</a></p>
         </div>
     </aside>
     <main class="accueil">

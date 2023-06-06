@@ -13,17 +13,20 @@
 
     <body style="display: flex;">
 
-        <div id="menu sidebar">
+        <div id="sidebar">
+            <a href="accueil.php"><button>Retour à l'accueil</button></a>
             <h2>Pièces</h2>
+
             <div class="menu-item">
-                <a href="#" onclick="addRoom('Cuisine', 'vuepiece.php'); return false;">Cuisine</a>
+                <a href="#" onclick="addRoom('Cuisine', 'assets/img/pieces/cuisine-titre.png', 'Cuisine'); return false;">Cuisine</a>
             </div>
             <div class="menu-item">
-                <a href="#" onclick="addRoom('Salon', 'vuepiece.php'); return false;">Salon</a>
+                <a href="#" onclick="addRoom('Salon', 'assets/img/pieces/Salon-titre.png', 'Salon'); return false;">Salon</a>
             </div>
             <div class="menu-item">
-                <a href="#" onclick="addRoom('Chambre', 'vuepiece.php'); return false;">Chambre</a>
+                <a href="#" onclick="addRoom('Chambre', 'assets/img/pieces/chambre-titre.png', 'Chambre'); return false;">Chambre</a>
             </div>
+
             <!-- Ajoutez d'autres pièces ici avec leurs liens -->
             <!--button onclick="toggleSidebar()">Rétracter</button-->
         </div>
@@ -41,7 +44,9 @@
                 </div>
             </div>
 
-            <button><a> Simuler </a></button>
+            <div class="visualisation">
+                <button class="visualisation" href="visufacture.php"> Simuler </button>
+            </div>
 
         </div>
 

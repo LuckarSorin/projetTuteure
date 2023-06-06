@@ -3,14 +3,28 @@ function toggleSidebar() {
     sidebar.classList.toggle("collapsed");
 }
 
-function addRoom(room, url) {
+function addRoom(room, imagePath, altText) {
     var container = document.getElementById("room-container");
     var newRoom = document.createElement("a");
     newRoom.className = "room";
-    newRoom.href = url;
-    newRoom.innerHTML = room + '<button class="delete-button" onclick="removeRoom(this.parentNode)">Moins</button>';
+    newRoom.href = 'vuepiece.php?room='+room;
+    newRoom.innerHTML = '<img src="' + imagePath + '" alt="' + altText + '"><button class="delete-button">Moins</button>';
     container.appendChild(newRoom);
+
+    var deleteButton = newRoom.querySelector(".delete-button");
+    deleteButton.addEventListener("click", function(event) {
+        event.stopPropagation();
+        removeRoom(newRoom);
+    });
 }
+
+
+// Appel de la fonction addRoom avec les images pour chaque pièce
+addRoom('Cuisine', 'vuepiece.php', 'chemin/vers/une/image-cuisine.png', 'Cuisine');
+addRoom('Salon', 'vuepiece.php', 'chemin/vers/une/image-salon.png', 'Salon');
+
+
+
 
 function removeRoom(room) {
     var container = document.getElementById("room-container");
@@ -21,8 +35,14 @@ function addEquipment(equipment) {
     var container = document.getElementById("room-container");
     var room = document.createElement("div");
     room.className = "room";
-    room.innerHTML = equipment + '<button class="delete-button" onclick="removeEquipment(this.parentNode)">Moins</button>';
+    room.innerHTML = equipment + '<button class="delete-button">Moins</button>';
     container.appendChild(room);
+
+    var deleteButton = room.querySelector(".delete-button");
+    deleteButton.addEventListener("click", function(event) {
+        event.stopPropagation();
+        removeEquipment(room);
+    });
 }
 
 function removeEquipment(room) {

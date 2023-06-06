@@ -31,7 +31,7 @@
                             include("./includes/choix_habitants.php");
                         }
                         else {
-                            include("./includes/vuemaison.php");
+                            include("vuemaison.php");/* déplacer dans includes/ ? */
                         }
                     }
                     else {
@@ -46,6 +46,8 @@
                 else {
                     include("./includes/choix_habitation.php");
                 }
+                
+                // TODO => Vérifier que habitat vaut bien soit 1 soit 3
             ?>
         </main>
     </body>

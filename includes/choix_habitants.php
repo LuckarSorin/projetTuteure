@@ -1,8 +1,8 @@
 <?php
-    if(isset($_GET["habitat"])){
+    if (isset($_GET["habitat"])) {
         $get_habitat = $_GET["habitat"];
     }
-    else{
+    else {
         $get_habitat = "1";
     }
 ?>
@@ -45,7 +45,7 @@
             <div class="bouton">
                 <div class="flex hover_decoration">
                     <hr>
-                    <p class="center"><a href="?habitat=<?php echo $get_habitat ?>&habitants=5">Suivant</a></p>
+                    <p class="center"><a href="?habitat=<?php echo $get_habitat ?>&habitants=1">Suivant</a></p>
                     <hr>
                 </div>
             </div>

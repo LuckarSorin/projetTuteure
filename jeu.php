@@ -24,14 +24,30 @@
 
             if (isset($_GET["habitat"])) {
                 if (isset($_GET["habitants"])) {
-                    if (($_GET["habitat"] != 1) && ($_GET["habitat"] != 3)) {
-                        include("./includes/choix_habitation.php");
-                    }
-                    else if (($_GET["habitants"] < 1) || ($_GET["habitants"] > 9)) {
-                        include("./includes/choix_habitants.php");
+                    if (isset($_GET["piece"])) {
+                        if (($_GET["habitat"] != 1) && ($_GET["habitat"] != 3)) {
+                            include("./includes/choix_habitation.php");
+                        }
+                        else if (($_GET["habitants"] < 1) || ($_GET["habitants"] > 9)) {
+                            include("./includes/choix_habitants.php");
+                        }
+                        else if (($_GET["piece"] < 1) || ($_GET["piece"] > 5)) {
+                            include("./includes/vuemaison.php");
+                        }
+                        else {
+                            include("./includes/vuepiece.php");
+                        }
                     }
                     else {
-                        include("./includes/vuemaison.php");
+                        if (($_GET["habitat"] != 1) && ($_GET["habitat"] != 3)) {
+                            include("./includes/choix_habitation.php");
+                        }
+                        else if (($_GET["habitants"] < 1) || ($_GET["habitants"] > 9)) {
+                            include("./includes/choix_habitants.php");
+                        }
+                        else {
+                            include("./includes/vuemaison.php");
+                        }
                     }
                 }
                 else {

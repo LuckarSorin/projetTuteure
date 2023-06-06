@@ -3,12 +3,11 @@ function toggleSidebar() {
     sidebar.classList.toggle("collapsed");
 }
 
-function addRoom(room, imagePath, altText) {
-    var piecePath = "assets/img/pieces/";
+function addRoom(room, imagePath, altText, href) {
     var container = document.getElementById("room-container");
     var newRoom = document.createElement("div");
     newRoom.className = "room";
-    newRoom.innerHTML = '<a class="imagepiece" href="vuepiece.php?room='+ room +'"><img class="imagepiece" src="' + piecePath + imagePath + '" alt="' + altText + '"></a><button class="delete-button">Moins</button>';
+    newRoom.innerHTML = '<a class="imagepiece" href="'+ href +'"><img class="imagepiece" src="' + imagePath + '" alt="' + altText + '"></a><button class="delete-button">Moins</button>';
     container.appendChild(newRoom);
 
     var deleteButton = newRoom.querySelector(".delete-button");
@@ -23,8 +22,7 @@ function removeRoom(room) {
     container.removeChild(room);
 }
 
-function addEquipment(equipment, imagePath, altText) {
-    var appareilPath = "assets/img/appareils/";
+function addEquipment(equipment) {
     var container = document.getElementById("room-container");
     var room = document.createElement("div");
     room.className = "room";

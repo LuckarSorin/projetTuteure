@@ -6,7 +6,7 @@ $(document).ready(function() {
     function getInclude(number) {
         jQuery.ajax({
             type: "POST",
-            url: "assets/ajax/ajax_visufacture_includes.php",
+            url: "../assets/ajax/ajax_visufacture_includes.php",
             dataType: "text",
             data: {
                 getInclude : number

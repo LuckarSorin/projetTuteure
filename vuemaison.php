@@ -18,19 +18,19 @@
             <h2>Pièces</h2>
 
             <div class="menu-item">
-                <a href="#" onclick="addRoom('Cuisine', 'assets/img/pieces/cuisine-titre.png', 'Cuisine'); return false;">Cuisine</a>
+                <a href="#" onclick="addRoom('Cuisine', 'cuisine-titre.png', 'Cuisine'); return false;">Cuisine</a>
             </div>
             <div class="menu-item">
-                <a href="#" onclick="addRoom('Salon', 'assets/img/pieces/Salon-titre.png', 'Salon'); return false;">Salon</a>
+                <a href="#" onclick="addRoom('Salon', 'Salon-titre.png', 'Salon'); return false;">Salon</a>
             </div>
             <div class="menu-item">
-                <a href="#" onclick="addRoom('Salle de bain', 'assets/img/pieces/Salle_de_bain-titre.png', 'Salle de bain'); return false;">Salle de bain</a>
+                <a href="#" onclick="addRoom('Salle de bain', 'Salle_de_bain-titre.png', 'Salle de bain'); return false;">Salle de bain</a>
             </div>
             <div class="menu-item">
-                <a href="#" onclick="addRoom('Buandrie', 'assets/img/pieces/Buandrie-titre.png', 'Buandrie'); return false;">Buandrie</a>
+                <a href="#" onclick="addRoom('Buandrie', 'Buandrie-titre.png', 'Buandrie'); return false;">Buandrie</a>
             </div>
             <div class="menu-item">
-                <a href="#" onclick="addRoom('Chambre', 'assets/img/pieces/chambre-titre.png', 'Chambre'); return false;">Chambre</a>
+                <a href="#" onclick="addRoom('Chambre', 'chambre-titre.png', 'Chambre'); return false;">Chambre</a>
             </div>
 
             <!-- Ajoutez d'autres pièces ici avec leurs liens -->
@@ -51,7 +51,7 @@
             </div>
 
             <div class="visualisation">
-                <a href="visufacture.php">
+                <a class="visualisation" href="visufacture.php">
                     <button class="visualisation"> Simuler </button>
                 </a>
             </div>

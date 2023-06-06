@@ -335,7 +335,7 @@ div.fond_sombre {
     background-color: var(--fond_sombre);
     color: var(--texte_sur_fond_sombre);
     height: 100%;
-    width: 100%;
+    width: 80%;
 }
 
 div#content>h1 {
@@ -408,6 +408,9 @@ div.visualisation {
     width: 75%;
     bottom: 20px;
 }
+a.visualisation {
+    text-align: center;
+}
 button.visualisation {
     width: 20%;
 }
@@ -426,6 +429,20 @@ img.imagepiece {
 
 /*#piece{
 
+}*/
+
+a.imageappareil {
+    height: 100%;
+}
+img.imageappareil {
+    /*height: 40%;*/
+    position: absolute;
+    bottom: 30;
+}
+/*img.imageplafonnier {
+    height: 40%;
+    position: absolute;
+    top: 20;
 }*/
 
 /* --- Style simulation --- */

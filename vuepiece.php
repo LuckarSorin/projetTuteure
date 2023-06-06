@@ -3,14 +3,11 @@
     if (isset($_GET['room'])) {
         $piece = $_GET['room'];
         switch ($_GET["room"]) {
-            case "Cuisine":
+            case "Cuisine" || "Salle de bain" || "Buandrie" || "Chambre":
                 $piece = "Ma ".$piece;
                 break;
             case "Salon":
                 $piece = "Mon ".$piece;
-                break;
-            case "Chambre":
-                $piece = "Ma ".$piece;
                 break;
             default:
                 $piece = "Ma ".$piece;
@@ -37,13 +34,43 @@
             <h2>Équipements</h2>
             
             <div class="menu-item">
-                <a href="#" onclick="addEquipment('Télévision')">Télévision</a>
+                <a href="#" onclick="addEquipment('Ballon deau chaude', 'Ballon deau chaude.png', 'Ballon deau chaude'); return false;">Ballon d'eau chaude</a>
             </div>
             <div class="menu-item">
-                <a href="#" onclick="addEquipment('Lumière')">Lumière</a>
+                <a href="#" onclick="addEquipment('Boitier internet', 'Boitier internet.png', 'Boitier internet'); return false;">Boitier internet</a>
             </div>
             <div class="menu-item">
-                <a href="#" onclick="addEquipment('Lampe')">Lampe</a>
+                <a href="#" onclick="addEquipment('Borne voiture éléctrique', 'Borne voiture éléctrique.png', 'Borne voiture éléctrique'); return false;">Borne voiture éléctrique</a>
+            </div>
+            <div class="menu-item">
+                <a href="#" onclick="addEquipment('Climatiseur', 'Climatiseur.png', 'Climatiseur'); return false;">Climatiseur</a>
+            </div>
+            <div class="menu-item">
+                <a href="#" onclick="addEquipment('Lampe', 'Lampe.png', 'Lampe'); return false;">Lampe</a>
+            </div>
+            <div class="menu-item">
+                <a href="#" onclick="addEquipment('Lave-vaisselle', 'Lave-vaisselle.png', 'Lave-vaisselle'); return false;">Lave-vaisselle</a>
+            </div>
+            <div class="menu-item">
+                <a href="#" onclick="addEquipment('Micro-onde', 'Micro-onde.png', 'Micro-onde'); return false;">Micro-onde</a>
+            </div>
+            <div class="menu-item">
+                <a href="#" onclick="addEquipment('PC fixe', 'PC fixe.png', 'PC fixe'); return false;">PC fixe</a>
+            </div>
+            <div class="menu-item">
+                <a href="#" onclick="addEquipment('Plafonnier', 'Plafonnier.png', 'Plafonnier'); return false;">Plafonnier</a>
+            </div>
+            <div class="menu-item">
+                <a href="#" onclick="addEquipment('Pompe à chaleur', 'Pompe à chaleur.png', 'Pompe à chaleur'); return false;">Pompe à chaleur</a>
+            </div>
+            <div class="menu-item">
+                <a href="#" onclick="addEquipment('Radiateur', 'Radiateur.png', 'Radiateur'); return false;">Radiateur</a>
+            </div>
+            <div class="menu-item">
+                <a href="#" onclick="addEquipment('Réfrigirateur', 'Réfrigirateur.png', 'Réfrigirateur'); return false;">Réfrigirateur</a>
+            </div>
+            <div class="menu-item">
+                <a href="#" onclick="addEquipment('TV', 'TV.png', 'TV'); return false;">Télévision</a>
             </div>
 
             <!--button onclick="toggleSidebar()">Rétracter</button-->

@@ -30,9 +30,7 @@
                 <p class="ajax_include facture">Facture</p>
 
                 <div class="retour">
-                    <a href="vuemaison.php">
-                        <p class="retour"> Retour à la configuration </p>
-                    </a>
+                    <p class="retour"><a href="vuemaison.php">Retour à la configuration</a></p>
                 </div>
                 
             </div>

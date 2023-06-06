@@ -4,11 +4,10 @@ function toggleSidebar() {
 }
 
 function addRoom(room, imagePath, altText) {
-    var piecePath = "assets/img/pieces/";
     var container = document.getElementById("room-container");
     var newRoom = document.createElement("div");
     newRoom.className = "room";
-    newRoom.innerHTML = '<a class="imagepiece" href="vuepiece.php?room='+ room +'"><img class="imagepiece" src="' + piecePath + imagePath + '" alt="' + altText + '"></a><button class="delete-button">Moins</button>';
+    newRoom.innerHTML = '<a class="imagepiece" href="./includes/vuepiece.php?room='+ room +'"><img class="imagepiece" src="' + imagePath + '" alt="' + altText + '"></a><button class="delete-button">Moins</button>';
     container.appendChild(newRoom);
 
     var deleteButton = newRoom.querySelector(".delete-button");
@@ -23,12 +22,11 @@ function removeRoom(room) {
     container.removeChild(room);
 }
 
-function addEquipment(equipment, imagePath, altText) {
-    var appareilPath = "assets/img/appareils/";
+function addEquipment(equipment) {
     var container = document.getElementById("room-container");
     var room = document.createElement("div");
     room.className = "room";
-    room.innerHTML = '<a class="imageappareil"><img class="imageappareil" src="' + appareilPath + imagePath + '" alt="' + altText + '"></a><button class="delete-button">Moins</button>';
+    room.innerHTML = equipment + '<button class="delete-button">Moins</button>';
     container.appendChild(room);
 
     var deleteButton = room.querySelector(".delete-button");

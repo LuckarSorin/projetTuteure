@@ -39,12 +39,12 @@
                             include("./includes/choix_habitation.php");
                         }
                         else {
-                            include("./includes/le_jeu_la.php");
+                            include("./includes/choix_habitants.php");
                         }
                     }
                 }
                 else {
-                    include("./includes/le_jeu_la.php");
+                    include("./includes/choix_habitation.php");
                 }
                 
                 // TODO => Vérifier que habitat vaut bien soit 1 soit 3

@@ -36,7 +36,7 @@
         <div class="bouton">
             <div class="flex hover_decoration">
                 <hr>
-                <p class="center"><a href="?habitants=5">Suivant</a></p>
+                <p class="center"><a href="&habitants=5">Suivant</a></p>
                 <hr>
             </div>
         </div>
@@ -58,9 +58,9 @@ $(document).ready(function() {
     // En fonction de la position du curseur                
     $(document).on("input change", "div.selection .curseur input", function() {
         $("div.selection .images figure").removeClass("selected");
-        var idhabitat = $("div.selection .curseur input").val();
-        $("div.selection .bouton a").attr("href", "?habitants=" + idhabitat);
-        $("div.selection .images figure").eq(idhabitat-1).addClass("selected");
+        var nbhabitants = $("div.selection .curseur input").val();
+        $("div.selection .bouton a").attr("href", "&habitants=" + nbhabitants);
+        $("div.selection .images figure").eq(nbhabitants-1).addClass("selected");
     });
 
     // En fonction de l'image cliquée
@@ -70,7 +70,7 @@ $(document).ready(function() {
             for (i = 1; i < 10; i++) {
                 if ($("div.selection .images figure").eq(i-1).hasClass("selected")) {
                     $("div.selection .curseur input").val(i);
-                    $("div.selection .bouton a").attr("href", "?habitat=" + i);
+                    $("div.selection .bouton a").attr("href", "&habitants=" + i);
                 }
             }
         });
